@@ -1,6 +1,8 @@
 # Hi 👋, I'm Daniel
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=Danielz-z&label=Profile views&color=0e75b6&style=flat" alt="Danielz-z" /> </p>
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=Danielz-z&label=Profile%20views&color=0e75b6&style=flat" alt="Danielz-z" />
+</p>
 
 - 🔭 I'm currently working on **Multimodal AI Researcher | EEG × BCI × Emotion Recognition**
 
