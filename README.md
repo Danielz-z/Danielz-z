@@ -86,6 +86,24 @@
 
 ---
 
+⚡ Outside Work
+
+- 🏀 basketball, badminton, table tennis, billiards, running, swimming - staying active
+- 🎸 guitar - lets me get lost in the moment
+- 📷 Photography & travel - back to the life and think about life
+- 🍳 Cooking - feed myself
+- 🌱 Gardening - slow and patient
+- 📚 Reading & thinking - long-term habit
+
+---
+
+ 🌍 Places
+
+Canada · Türkiye · Uzbekistan · Japan · Singapore  
+Hong Kong · Macau · Thailand · Malaysia · Kazakhstan  
+
+---
+
 📫 Contact
 
 - Email: daniel.zhengzhou@gmail.com
