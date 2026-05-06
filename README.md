@@ -7,7 +7,7 @@
 
 ---
 
-🔭 Current Work
+🔬 Current Work
 
 - Building **Human-aware Embodied Agent Systems**
   - Perception → State Modeling → Planning → Action
@@ -17,7 +17,7 @@
 
 ---
 
-🌱 Research Focus
+🔬 Research Focus
 
 - Cross-subject EEG Generalization (Multifractal Analysis + Transformer)
 - Multimodal Fusion (EEG + Vision + Language)
@@ -42,11 +42,10 @@
 
 ⚙️ Engineering Stack
 
-- ML: PyTorch, Braindecode, EEGNet, Transformer
-- Systems: Linux, Remote GPU (RTX 4090), SSH, VSCode Remote
-- Deployment: Docker (learning), MLOps (early stage)
-- Robotics: Astribot SDK, STM32 (embedded control)
-- Data: SEED-VII, BCI Competition IV 2a
+- Programming: Python, C/C++, Java, SQL, JavaScript, Shell
+- AI / Machine Learning: PyTorch, TensorFlow, Scikit-Learn, OpenCV, MNE, Braindecode, EEGNet, Transformer, NumPy, Pandas, Matplotlib
+- Systems & Infrastructure: Linux, Docker, Kubernetes, Git, SSH, VSCode Remote, MySQL, Jupyter, LaTeX
+- Robotics & Embedded: Astribot SDK, STM32 Embedded Control
 
 ---
 
