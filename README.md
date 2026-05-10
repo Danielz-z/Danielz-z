@@ -1,92 +1,98 @@
-# Hi 👋, I'm Daniel
+<h1 align="center">Hi 👋, I'm Daniel</h1>
 
-<p align="left">
+<p align="center">
+Building Human-aware Agent Systems
+</p>
+
+<p align="center">
+Perception → State Modeling → Decision → Action
+</p>
+
+<p align="center">
   <img src="https://komarev.com/ghpvc/?username=Danielz-z&label=Profile%20views&color=0e75b6&style=flat" alt="Danielz-z" />
 </p>
-🚀 Multimodal AI & Human-aware Agent System Builder
 
----
+<br>
 
-🔬 Current Work
+## 🔬 Current Work
 
-- Building **Human-aware Embodied Agent Systems**
-  - Perception → State Modeling → Planning → Action
-- Multimodal AI: **EEG × Vision × Behavior Modeling**
-- Robotics Integration (Astribot Platform)
-- EEG-based Emotion & Intention Recognition 
+I am currently building human-aware embodied agent systems that integrate perception, state modeling, planning, and action. My work focuses on multimodal AI systems combining EEG, vision, and behavioral signals together with robotics integration on embodied platforms such as Astribot.
 
----
+<br>
 
-🔬 Research Focus
+## 🧠 Research Focus
 
-- Cross-subject EEG Generalization 
-- Multimodal Fusion (EEG + Vision + Language + Audio)
-- Human State Modeling (Behavior-driven, not just BCI)
-- Deployment of Real-time AI Systems 
+My research interests include cross-subject EEG generalization, multimodal fusion across EEG, vision, language, and audio, as well as behavior-driven human state modeling beyond traditional BCI settings. I am also interested in the deployment of real-time AI systems for embodied and human-aware applications.
 
----
+<br>
 
-🧠 What I Build
+## ⚙️ What I Build
 
-- Human-aware Agent (not just chatbot)
-- Closed-loop intelligent systems:
+I build human-aware intelligent systems rather than traditional chatbots. My work focuses on closed-loop architectures that integrate perception, state estimation, decision making, action execution, and feedback.
 
-  Perception → State → Decision → Action → Feedback
+### Example Capabilities
 
-- Example capabilities:
-  - Emotion → Robot Action (e.g., Happy → approach / interact)
-  - EEG → Intention → Control
-  - Vision + EEG → Robust State Estimation
+* Emotion → Robot Action (e.g., Happy → approach / interact)
+* EEG → Intention → Control
+* Vision + EEG → Robust State Estimation
 
----
+<br>
 
-⚙️ Engineering Stack
+## 📌 Featured Projects
 
-- Programming: Python, C/C++, Java, SQL, JavaScript, Shell
-- AI / Machine Learning: PyTorch, TensorFlow, Scikit-Learn, OpenCV, MNE, Braindecode, EEGNet, Transformer, NumPy, Pandas, Matplotlib
-- AI Engineering Workflow: Claude Code, OpenAI Codex
-- Systems & Infrastructure: Linux, Docker, Kubernetes, Git, SSH, VSCode Remote, MySQL, Jupyter, LaTeX
-- Robotics & Embedded: Astribot (Famous Chinese robot brand) SDK, STM32 Embedded Control
+### EEG Emotion Recognition (MAET model)
 
----
+- Multifractal + Transformer-based model
+- Cross-subject generalization on SEED dataset
+- Focus on robustness and generalization
+- Paper: [Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
+- Accepted by IEEE EMBC 2026
 
-📌 Featured Projects
+### EEG-BCI-Car
 
-- **EEG Emotion Recognition (MAET model)**
-  - Multifractal + Transformer-based model
-  - Cross-subject generalization on SEED dataset
-  - Focus on robustness and generalization
+* End-to-end EEG intention recognition system
+* Model training (LSTM / SVM / etc.) + real-time control
+* Integrated with embedded system (STM32 + Bluetooth)
 
-- **EEG-BCI-Car**
-  - End-to-end EEG intention recognition system
-  - Model training (LSTM / SVM / etc.) + real-time control
-  - Integrated with embedded system (STM32 + Bluetooth)
+### Human-aware Robot Agent (Astribot)
 
-- **Human-aware Robot Agent (Astribot)**
-  - Vision-based emotion recognition (DeepFace)
-  - Robot action control based on human state
-  - Closed-loop system: perception → decision → action
+* Vision-based emotion recognition (DeepFace)
+* Robot action control based on human state
+* Closed-loop system: perception → decision → action
 
----
+<br>
 
-🤝 Open to Collaborate
+## ⚙️ Engineering Stack
 
-- Multimodal Agent Systems
-- Embodied AI / Robotics + AI
-- EEG + Vision Fusion
-- Real-world AI Deployment (system-level, not just models)
+* Programming: Python, C/C++, Java, SQL, JavaScript, Shell
 
----
+* AI / Machine Learning:
+  PyTorch, TensorFlow, Scikit-Learn, OpenCV, MNE, Braindecode, EEGNet, Transformer, NumPy, Pandas, Matplotlib
 
-💡 Looking for Discussion
+* AI Engineering Workflow:
+  Claude Code, OpenAI Codex
 
-- Scalable Agent Architectures
-- Human State Modeling (behavior-based)
-- System design for real-world deployment
+* Systems & Infrastructure:
+  Linux, Docker, Kubernetes, Git, SSH, VSCode Remote, MySQL, Jupyter, LaTeX
 
----
+* Robotics & Embedded:
+  Astribot SDK, STM32 Embedded Control
 
-⚡ Outside Work
+<br>
+
+## 🤝 Open to Collaborate
+
+I am open to collaboration on multimodal agent systems, embodied AI, EEG and vision fusion, and real-world deployment of intelligent systems.
+
+<br>
+
+## 💡 Looking for Discussion
+
+I enjoy discussions around scalable agent architectures, human state modeling, and system design for real-world AI deployment.
+
+<br>
+
+## ⚡ Outside Work
 
 - 🏀 basketball, badminton, table tennis, billiards, running, swimming - staying active
 - 🎸 guitar - lets me get lost in the moment
@@ -95,29 +101,37 @@
 - 🌱 Gardening - slow and patient
 - 📚 Reading & thinking - long-term habit
 
----
+<br>
 
- 🌍 Places
+## 🌍 Places I've been to
 
-Canada · Türkiye · Uzbekistan · Japan · Singapore  
-Hong Kong · Macau · Thailand · Malaysia · Kazakhstan  
+China · Canada · Türkiye · Uzbekistan · Japan · Singapore
+Hong Kong · Macau · Thailand · Malaysia · Kazakhstan
 
----
+<br>
 
-📫 Contact
+## 📫 Contact
 
-- Email: daniel.zhengzhou@gmail.com
+* Email: [daniel.zhengzhou@gmail.com](mailto:daniel.zhengzhou@gmail.com)
+
+<p align="center">
+  <a href="https://github.com/Danielz-z" target="_blank">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="GitHub" height="35" width="35" />
+  </a>
+  
+  <a href="https://www.linkedin.com/in/zheng-zhou-603413363" target="_blank">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="35" width="35" />
+  </a>
+</p>
+
+## 🛠 Languages and Tools
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=anaconda,bash,blender,c,cpp,docker,flask,git,java,js,linux,matlab,nginx,photoshop,python,pytorch,qt,tensorflow,mysql,vscode,latex,opencv,kubernetes,arduino&perline=8" />
+</p>
+
+<br>
 
 <p align="center">
 Always learning to balance.
 </p>
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://github.com/Danielz-z" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="Danielz-z" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/zheng-zhou-603413363" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/zheng-zhou-603413363" height="30" width="40" /></a>
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.mozilla.org/en-US/docs/Web/anaconda" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=anaconda" alt="anaconda" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/bash" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=bash" alt="bash" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/blender" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=blender" alt="blender" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/c" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=c" alt="c" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/cplusplus" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=cpp" alt="cplusplus" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/docker" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=docker" alt="docker" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/flask" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=flask" alt="flask" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/git" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=git" alt="git" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/hadoop" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg" alt="hadoop" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/java" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=java" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/javascript" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=js" alt="javascript" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/jupyter" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" alt="jupyter" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/keras" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="keras" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/linux" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=linux" alt="linux" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/mariadb" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="mariadb" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/matlab" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=matlab" alt="matlab" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/matplotlib" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="matplotlib" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/mysql" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=mysql" alt="mysql" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/nginx" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=nginx" alt="nginx" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/numpy" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="numpy" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/opencv" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=opencv" alt="opencv" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/pandas" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/photoshop" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=photoshop" alt="photoshop" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/python" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=py" alt="python" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/pytorch" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=pytorch" alt="pytorch" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/qt" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=qt" alt="qt" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/scikit_learn" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=scikitlearn" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/tensorflow" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=tensorflow" alt="tensorflow" width="40" height="40"/> </a></p>
-
