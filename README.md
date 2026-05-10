@@ -13,22 +13,22 @@
   - Perception → State Modeling → Planning → Action
 - Multimodal AI: **EEG × Vision × Behavior Modeling**
 - Robotics Integration (Astribot Platform)
-- EEG-based Emotion & Intention Recognition (SEED / BCI IV 2a)
+- EEG-based Emotion & Intention Recognition 
 
 ---
 
 🔬 Research Focus
 
-- Cross-subject EEG Generalization (Multifractal Analysis + Transformer)
-- Multimodal Fusion (EEG + Vision + Language)
-- Human State Modeling (Behavior-driven, non-BCI)
-- Real-time AI Systems (low-latency inference + deployment)
+- Cross-subject EEG Generalization 
+- Multimodal Fusion (EEG + Vision + Language + Audio)
+- Human State Modeling (Behavior-driven, not just BCI)
+- Deployment of Real-time AI Systems 
 
 ---
 
 🧠 What I Build
 
-- Human-aware Agent (not chatbot)
+- Human-aware Agent (not just chatbot)
 - Closed-loop intelligent systems:
 
   Perception → State → Decision → Action → Feedback
@@ -44,14 +44,15 @@
 
 - Programming: Python, C/C++, Java, SQL, JavaScript, Shell
 - AI / Machine Learning: PyTorch, TensorFlow, Scikit-Learn, OpenCV, MNE, Braindecode, EEGNet, Transformer, NumPy, Pandas, Matplotlib
+- AI Engineering Workflow: Claude Code, OpenAI Codex
 - Systems & Infrastructure: Linux, Docker, Kubernetes, Git, SSH, VSCode Remote, MySQL, Jupyter, LaTeX
-- Robotics & Embedded: Astribot SDK, STM32 Embedded Control
+- Robotics & Embedded: Astribot (Famous Chinese robot brand) SDK, STM32 Embedded Control
 
 ---
 
 📌 Featured Projects
 
-- **EEG Emotion Recognition (MAET)**
+- **EEG Emotion Recognition (MAET model)**
   - Multifractal + Transformer-based model
   - Cross-subject generalization on SEED dataset
   - Focus on robustness and generalization
