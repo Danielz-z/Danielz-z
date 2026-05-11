@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Daniel</h1>
 
 <p align="center">
-Building Human-aware Agent Systems
+Building Human-aware Embodied Agent Systems
 </p>
 
 <p align="center">
