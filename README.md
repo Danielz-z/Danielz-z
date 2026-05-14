@@ -53,6 +53,7 @@ I build human-aware intelligent systems rather than traditional chatbots. My wor
 * End-to-end EEG intention recognition system
 * Model training (LSTM / SVM / etc.) + real-time control
 * Integrated with embedded system (STM32 + Bluetooth)
+* Honored as The 13th Cloud Programming World Cup - first prize
 
 ### Human-aware Robot Agent (Astribot)
 
@@ -96,10 +97,10 @@ I enjoy discussions around scalable agent architectures, human state modeling, a
 
 - 🏀 basketball, badminton, table tennis, billiards, running, swimming - staying active
 - 🎸 guitar - lets me get lost in the moment
-- 📷 Photography & travel - back to the life and think about life
-- 🍳 Cooking - feed myself
-- 🌱 Gardening - slow and patient
-- 📚 Reading & thinking - long-term habit
+- 📷 photography & travel - back to the life and think about life
+- 🍳 cooking - feed myself
+- 🌱 gardening - slow and patient
+- 📚 reading & thinking - long-term habit
 
 <br>
 
