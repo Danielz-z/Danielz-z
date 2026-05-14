@@ -57,9 +57,11 @@ I build human-aware intelligent systems rather than traditional chatbots. My wor
 
 ### Human-aware Robot Agent (Astribot)
 
-* Vision-based emotion recognition (DeepFace)
-* Robot action control based on human state
-* Closed-loop system: perception → decision → action
+- Multimodal human-state sensing with facial emotion recognition, EEG signals, and BCI paradigms
+- Built a DeepFace-based emotion recognition prototype for real-time robot interaction
+- Explored SSVEP-based robot control and motor-imagery classification with EEGNet
+- Designed stable event-triggering logic to reduce noisy or unstable robot actions
+- Closed-loop system: perception → state estimation → decision → action → feedback
 
 <br>
 
