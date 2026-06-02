@@ -95,24 +95,6 @@ I enjoy discussions around scalable agent architectures, human state modeling, a
 
 <br>
 
-## ⚡ Outside Work
-
-- 🏀 basketball, badminton, table tennis, billiards, running, swimming - staying active
-- 🎸 guitar - lets me get lost in the moment
-- 📷 photography & travel - back to the life and think about life
-- 🍳 cooking - feed myself
-- 🌱 gardening - slow and patient
-- 📚 reading & thinking - long-term habit
-
-<br>
-
-## 🌍 Places I've been to
-
-China · Canada · Türkiye · Uzbekistan · Japan · Singapore
-Hong Kong · Macau · Thailand · Malaysia · Kazakhstan
-
-<br>
-
 ## 📫 Contact
 
 * Email: [daniel.zhengzhou@gmail.com](mailto:daniel.zhengzhou@gmail.com)
