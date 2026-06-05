@@ -98,6 +98,7 @@ I enjoy discussions around scalable agent architectures, human state modeling, a
 ## 📫 Contact
 
 * Email: [daniel.zhengzhou@gmail.com](mailto:daniel.zhengzhou@gmail.com)
+* LinkedIn: [www.linkedin.com/in/zheng-zhou-cs](https://www.linkedin.com/in/zheng-zhou-cs)
 
 <p align="center">
   <a href="https://github.com/Danielz-z" target="_blank">
