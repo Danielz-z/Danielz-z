@@ -42,8 +42,8 @@ I build human-aware intelligent systems rather than traditional chatbots. My wor
 
 ### EEG Emotion Recognition (MAET model)
 
-- Multifractal + Transformer-based model
-- Cross-subject generalization on SEED dataset
+- Multifractal + Graph-based + Transformer-based model
+- Cross-subject generalization on SEED-VII dataset
 - Focus on robustness and generalization
 - Paper: [Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
 - Accepted by IEEE EMBC 2026
