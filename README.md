@@ -16,7 +16,7 @@ Perception → State Modeling → Decision → Action
 
 ## 🔬 Current Work
 
-I am currently building human-aware embodied agent systems that integrate perception, state modeling, planning, and action. My work focuses on multimodal AI systems combining EEG, vision, and behavioral signals together with robotics integration on embodied platforms such as Astribot.
+I am currently building human-aware embodied agent systems that integrate perception, state modeling, planning, and action. My work focuses on multimodal AI systems combining EEG, vision, and behavioral signals together with robotics integration on embodied platforms such as Aloha and Astribot.
 
 <br>
 
