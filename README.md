@@ -55,7 +55,7 @@ I build human-aware intelligent systems rather than traditional chatbots. My wor
 * Integrated with embedded system (STM32 + Bluetooth)
 * Honored as The 13th Cloud Programming World Cup - first prize
 
-### Human-aware Robot Agent (Astribot)
+### Human-aware Robot Agent (Astribot and Aloha)
 
 - Multimodal human-state sensing with facial emotion recognition, EEG signals, and BCI paradigms
 - Built a DeepFace-based emotion recognition prototype for real-time robot interaction
