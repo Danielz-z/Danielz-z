@@ -46,7 +46,7 @@ I build human-aware intelligent systems rather than traditional chatbots. My wor
 - Cross-subject generalization on SEED-VII dataset
 - Focus on robustness and generalization
 - Paper: [Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
-- Accepted as an Oral Presentation at IEEE EMBC 2026, Oral Presentation
+- Accepted for Oral Presentation at IEEE EMBC 2026
 
 ### EEG-BCI-Car
 
