@@ -12,6 +12,10 @@ Perception → State Modeling → Decision → Action
   <img src="https://komarev.com/ghpvc/?username=Danielz-z&label=Profile%20views&color=0e75b6&style=flat" alt="Danielz-z" />
 </p>
 
+<p align="center">
+  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
+</p>
+
 <br>
 
 ## 🔬 Current Work

@@ -1,0 +1,127 @@
+<h1 align="center">你好 👋，我是 Daniel</h1>
+
+<p align="center">
+构建以人为本的具身智能体系统
+</p>
+
+<p align="center">
+感知 → 状态建模 → 决策 → 动作
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Danielz-z&label=Profile%20views&color=0e75b6&style=flat" alt="Danielz-z" />
+</p>
+
+<p align="center">
+  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
+</p>
+
+<br>
+
+## 🔬 目前在做什么
+
+我正在构建能够理解人的具身智能体系统，把感知、状态建模、规划和动作整合在一起。具体来说，是在 Aloha、Astribot 等具身平台上，研究如何融合 EEG、视觉和行为信号，做出更自然、更可靠的多模态 AI 系统。
+
+<br>
+
+## 🧠 研究方向
+
+我关注的核心问题包括：跨被试 EEG 泛化、EEG / 视觉 / 语言 / 音频的多模态融合，以及超越传统 BCI 场景的行为驱动人类状态建模。同时，我也对把这些方法部署成实时系统、真正跑在机器人和具身设备上很感兴趣。
+
+<br>
+
+## ⚙️ 我做的东西
+
+我更倾向于做「懂人的智能系统」，而不是传统意义上的对话机器人。我的工作围绕闭环架构展开：感知 → 状态估计 → 决策 → 执行 → 反馈。
+
+### 一些能力示例
+
+* 情绪 → 机器人动作（例如：开心 → 靠近 / 互动）
+* EEG → 意图识别 → 控制指令
+* 视觉 + EEG → 更鲁棒的状态估计
+
+<br>
+
+## 📌 代表性项目
+
+### EEG 情绪识别（MAET 模型）
+
+- 融合多重分形特征、图连接特征和 Transformer
+- 在 SEED-VII 数据集上进行跨被试泛化
+- 关注鲁棒性与泛化能力
+- 论文：[Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
+- 被 IEEE EMBC 2026 接收为 Oral Presentation
+
+### EEG-BCI-Car
+
+* 端到端 EEG 意图识别系统
+* 模型训练（LSTM / SVM 等）+ 实时控制
+* 与嵌入式系统联动（STM32 + 蓝牙）
+* 获第 13 届 Cloud Programming World Cup 一等奖
+
+### 以人为本的机器人智能体（Astribot & Aloha）
+
+- 融合面部表情识别、EEG 信号和 BCI 范式进行多模态人类状态感知
+- 基于 DeepFace 的情绪识别原型，用于实时机器人交互
+- 探索基于 SSVEP 和 motor imagery 的机器人控制，使用 EEGNet 等模型
+- 设计稳定的事件触发逻辑，减少噪声或不稳定的机器人动作
+- 闭环系统：感知 → 状态估计 → 决策 → 动作 → 反馈
+
+<br>
+
+## ⚙️ 技术栈
+
+* 编程：Python、C/C++、Java、SQL、JavaScript、Shell
+
+* AI / 机器学习：
+  PyTorch、TensorFlow、Scikit-Learn、OpenCV、MNE、Braindecode、EEGNet、Transformer、NumPy、Pandas、Matplotlib
+
+* AI 工程工作流：
+  Claude Code、OpenAI Codex
+
+* 系统与基础设施：
+  Linux、Docker、Kubernetes、Git、SSH、VSCode Remote、MySQL、Jupyter、LaTeX
+
+* 机器人与嵌入式：
+  Astribot SDK、STM32 嵌入式控制
+
+<br>
+
+## 🤝 希望合作的方向
+
+欢迎围绕多模态智能体、具身 AI、EEG 与视觉融合，以及智能系统的真实场景部署展开合作。
+
+<br>
+
+## 💡 想聊的话题
+
+我喜欢讨论可扩展的 Agent 架构、人类状态建模，以及面向真实世界部署的 AI 系统设计。
+
+<br>
+
+## 📫 联系方式
+
+* 邮箱：[daniel.zhengzhou@gmail.com](mailto:daniel.zhengzhou@gmail.com)
+* LinkedIn：[www.linkedin.com/in/zheng-zhou-cs](https://www.linkedin.com/in/zheng-zhou-cs)
+
+<p align="center">
+  <a href="https://github.com/Danielz-z" target="_blank">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="GitHub" height="35" width="35" />
+  </a>
+  
+  <a href="https://www.linkedin.com/in/zheng-zhou-603413363" target="_blank">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="35" width="35" />
+  </a>
+</p>
+
+## 🛠 语言与工具
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=anaconda,bash,blender,c,cpp,docker,flask,git,java,js,linux,matlab,nginx,photoshop,python,pytorch,qt,tensorflow,mysql,vscode,latex,opencv,kubernetes,arduino&perline=8" />
+</p>
+
+<br>
+
+<p align="center">
+Always learning to balance.
+</p>
