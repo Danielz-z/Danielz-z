@@ -117,7 +117,7 @@
 ## 🛠 语言与工具
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=anaconda,bash,blender,c,cpp,docker,flask,git,java,js,linux,matlab,mysql,nginx,photoshop,python,pytorch,qt,sklearn,tensorflow,vscode,latex,opencv,kubernetes,arduino&perline=8" />
+  <img src="https://skillicons.dev/icons?i=anaconda,aws,bash,blender,c,cpp,docker,fastapi,flask,git,githubactions,java,js,linux,matlab,mysql,nginx,photoshop,python,pytorch,qt,r,ros,scikitlearn,tensorflow,vscode,latex,opencv,kubernetes,arduino&perline=8" />
 </p>
 
 <br>
