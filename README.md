@@ -117,7 +117,7 @@ I enjoy discussions around scalable agent architectures, human state modeling, a
 ## 🛠 Languages and Tools
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=anaconda,bash,blender,c,cpp,docker,flask,git,huggingface,java,js,jupyter,linux,matlab,matplotlib,mysql,numpy,pandas,photoshop,python,pytorch,qt,sklearn,tensorflow,vscode,latex,opencv,kubernetes,arduino&perline=8" />
+  <img src="https://skillicons.dev/icons?i=anaconda,bash,blender,c,cpp,docker,flask,git,java,js,linux,matlab,mysql,nginx,photoshop,python,pytorch,qt,sklearn,tensorflow,vscode,latex,opencv,kubernetes,arduino&perline=8" />
 </p>
 
 <br>
