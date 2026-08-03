@@ -44,7 +44,7 @@
 
 ## 📌 代表性项目
 
-### EEG 情绪识别（MAET 模型）
+### [EEG 情绪识别（MAET 模型）](https://github.com/Danielz-z/LGF-EEG-Emotion)
 
 - 融合多重分形特征、图连接特征和 Transformer
 - 在 SEED-VII 数据集上进行跨被试泛化
@@ -52,7 +52,7 @@
 - 论文：[Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
 - 被 IEEE EMBC 2026 接收为 Oral Presentation
 
-### EEG-BCI-Car
+### [EEG-BCI-Car](https://github.com/Danielz-z/EEG-BCI-Car)
 
 * 端到端 EEG 意图识别系统
 * 模型训练（LSTM / SVM 等）+ 实时控制
