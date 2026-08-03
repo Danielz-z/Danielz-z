@@ -44,7 +44,7 @@ I build human-aware intelligent systems rather than traditional chatbots. My wor
 
 ## 📌 Featured Projects
 
-### EEG Emotion Recognition (MAET model)
+### [EEG Emotion Recognition (MAET model)](https://github.com/Danielz-z/LGF-EEG-Emotion)
 
 - Multifractal + Graph-based + Transformer-based model
 - Cross-subject generalization on SEED-VII dataset
@@ -52,7 +52,7 @@ I build human-aware intelligent systems rather than traditional chatbots. My wor
 - Paper: [Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
 - Accepted for Oral Presentation at IEEE EMBC 2026
 
-### EEG-BCI-Car
+### [EEG-BCI-Car](https://github.com/Danielz-z/EEG-BCI-Car)
 
 * End-to-end EEG intention recognition system
 * Model training (LSTM / SVM / etc.) + real-time control
