@@ -83,7 +83,7 @@
   Linux、Docker、Kubernetes、Git、SSH、VSCode Remote、MySQL、Jupyter、LaTeX
 
 * 机器人与嵌入式：
-  Astribot SDK、STM32 嵌入式控制
+  Astribot SDK、Aloha、STM32 嵌入式控制
 
 <br>
 
