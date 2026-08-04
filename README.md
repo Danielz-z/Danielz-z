@@ -46,11 +46,11 @@ I build human-aware intelligent systems rather than traditional chatbots. My wor
 
 ### [EEG Emotion Recognition (MAET model)](https://github.com/Danielz-z/LGF-EEG-Emotion)
 
-- Multifractal + Graph-based + Transformer-based model
-- Cross-subject generalization on SEED-VII dataset
-- Focus on robustness and generalization
-- Paper: [Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
-- Accepted for Oral Presentation at IEEE EMBC 2026
+* Multifractal + Graph-based + Transformer-based model
+* Cross-subject generalization on SEED-VII dataset
+* Focus on robustness and generalization
+* Paper: [Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
+* Accepted for Oral Presentation at IEEE EMBC 2026
 
 ### [EEG-BCI-Car](https://github.com/Danielz-z/EEG-BCI-Car)
 
@@ -61,11 +61,11 @@ I build human-aware intelligent systems rather than traditional chatbots. My wor
 
 ### Human-aware Robot Agent (Astribot and Aloha)
 
-- Multimodal human-state sensing with facial emotion recognition, EEG signals, and BCI paradigms
-- Built a DeepFace-based emotion recognition prototype for real-time robot interaction
-- Explored SSVEP-based robot control and motor-imagery classification with EEGNet
-- Designed stable event-triggering logic to reduce noisy or unstable robot actions
-- Closed-loop system: perception → state estimation → decision → action → feedback
+* Multimodal human-state sensing with facial emotion recognition, EEG signals, and BCI paradigms
+* Built a DeepFace-based emotion recognition prototype for real-time robot interaction
+* Explored SSVEP-based robot control and motor-imagery classification with EEGNet
+* Designed stable event-triggering logic to reduce noisy or unstable robot actions
+* Closed-loop system: perception → state estimation → decision → action → feedback
 
 <br>
 
