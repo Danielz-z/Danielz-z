@@ -65,7 +65,7 @@ Demo video: coming soon
 
 ### EAV Multimodal Emotion Recognition
 
-* 42-subject EEG-Audio-Video dataset with leakage-free splits; built complete unimodal baselines and late fusion achieving 0.5729 accuracy (private repository)
+* 42-subject EEG-Audio-Video dataset with leakage-free splits; built complete unimodal baselines and late fusion achieving 0.5729 accuracy
 
 <br>
 
