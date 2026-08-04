@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://amorfati.cn/">个人网站</a>
+  <a href="https://amorfati.cn/">🌐 个人网站</a>
 </p>
 
 <br>
