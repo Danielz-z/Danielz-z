@@ -9,7 +9,7 @@ Perception → State Modeling → Decision → Action
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
+  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="https://amorfati.cn/">Personal Website</a>
 </p>
 
 <br>
@@ -67,6 +67,12 @@ Demo video: coming soon
 
 * 42-subject EEG-Audio-Video dataset with leakage-free splits; built complete unimodal baselines and late fusion achieving 0.5729 accuracy
 
+### [Personal Website & AI Infrastructure](https://amorfati.cn/)
+
+* Docker-first personal website with Caddy reverse proxy and WordPress
+* Migrated to AI-ready infrastructure with FastAPI and future agent services
+* Notes: [Amor Fati AI Infrastructure](https://github.com/Danielz-z/ai-engineering-notes/blob/main/amorfati-ai-infra-readme.md)
+
 <br>
 
 ## ⚙️ Engineering Stack
@@ -103,7 +109,6 @@ I enjoy discussions around scalable agent architectures, human state modeling, a
 
 * Email: [daniel.zhengzhou@gmail.com](mailto:daniel.zhengzhou@gmail.com)
 * LinkedIn: [www.linkedin.com/in/zheng-zhou-cs](https://www.linkedin.com/in/zheng-zhou-cs)
-* Personal Website: [amorfati.cn](https://amorfati.cn/)
 
 <p align="center">
   <a href="https://github.com/Danielz-z" target="_blank">
