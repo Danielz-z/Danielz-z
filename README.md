@@ -13,7 +13,7 @@ Perception → State Modeling → Decision → Action
 </p>
 
 <p align="center">
-  <a href="https://amorfati.cn/">Personal Website</a>
+  <a href="https://amorfati.cn/">🌐 Personal Website</a>
 </p>
 
 <br>
