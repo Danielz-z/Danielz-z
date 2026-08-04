@@ -95,7 +95,7 @@
 
 * 邮箱：[daniel.zhengzhou@gmail.com](mailto:daniel.zhengzhou@gmail.com)
 * LinkedIn：[www.linkedin.com/in/zheng-zhou-cs](https://www.linkedin.com/in/zheng-zhou-cs)
-* 博客：[amorfati.cn](https://amorfati.cn/)
+* 个人网站：[amorfati.cn](https://amorfati.cn/)
 
 <p align="center">
   <a href="https://github.com/Danielz-z" target="_blank">
