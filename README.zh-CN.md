@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
+  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="https://amorfati.cn/">个人网站</a>
 </p>
 
 <br>
@@ -67,6 +67,12 @@
 
 * 42 被试 EEG-Audio-Video 多模态情绪识别数据集，采用防泄漏数据划分；构建了完整的单模态基线与 late fusion，准确率达 0.5729
 
+### [个人网站与 AI 基础设施](https://amorfati.cn/)
+
+* 基于 Docker 的个人网站，使用 Caddy 反向代理和 WordPress
+* 迁移至 AI 就绪的基础设施，集成 FastAPI 与未来 Agent 服务
+* 笔记：[Amor Fati AI 基础设施](https://github.com/Danielz-z/ai-engineering-notes/blob/main/amorfati-ai-infra-readme.md)
+
 <br>
 
 ## ⚙️ 技术栈
@@ -103,7 +109,6 @@
 
 * 邮箱：[daniel.zhengzhou@gmail.com](mailto:daniel.zhengzhou@gmail.com)
 * LinkedIn：[www.linkedin.com/in/zheng-zhou-cs](https://www.linkedin.com/in/zheng-zhou-cs)
-* 个人网站：[amorfati.cn](https://amorfati.cn/)
 
 <p align="center">
   <a href="https://github.com/Danielz-z" target="_blank">
