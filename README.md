@@ -9,7 +9,11 @@ Perception → State Modeling → Decision → Action
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="https://amorfati.cn/">Personal Website</a>
+  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
+</p>
+
+<p align="center">
+  <a href="https://amorfati.cn/">Personal Website</a>
 </p>
 
 <br>
