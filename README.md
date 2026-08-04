@@ -95,7 +95,7 @@ I enjoy discussions around scalable agent architectures, human state modeling, a
 
 * Email: [daniel.zhengzhou@gmail.com](mailto:daniel.zhengzhou@gmail.com)
 * LinkedIn: [www.linkedin.com/in/zheng-zhou-cs](https://www.linkedin.com/in/zheng-zhou-cs)
-* Blog: [amorfati.cn](https://amorfati.cn/)
+* Personal Website: [amorfati.cn](https://amorfati.cn/)
 
 <p align="center">
   <a href="https://github.com/Danielz-z" target="_blank">
