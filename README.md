@@ -51,13 +51,21 @@ My research interests include cross-subject EEG generalization, multimodal fusio
 * Integrated with embedded system (STM32 + Bluetooth)
 * Honored as The 13th Cloud Programming World Cup - first prize
 
-### Human-aware Robot Agent (Astribot and Aloha)
+### Embodied AI & Robot Control (Industry Projects)
+
+Demo video: coming soon
 
 * Multimodal human-state sensing with facial emotion recognition, EEG signals, and BCI paradigms
-* Built a DeepFace-based emotion recognition prototype for real-time robot interaction
+* Built a DeepFace-based emotion recognition prototype for real-time robot interaction — [notes](https://github.com/Danielz-z/ai-engineering-notes/blob/main/deepface_robot_control.md)
 * Explored SSVEP-based robot control and motor-imagery classification with EEGNet
-* Designed stable event-triggering logic to reduce noisy or unstable robot actions
-* Closed-loop system: perception → state estimation → decision → action → feedback
+* Closed-loop system (perception → state estimation → decision → action → feedback) with stable event-triggering logic to reduce noisy or unstable robot actions
+* π0.5 VLA model fine-tuning on AgileX Aloha for bimanual manipulation — [notes](https://github.com/Danielz-z/ai-engineering-notes/blob/main/pi05_aloha_finetune.md)
+* OpenPI policy serving and dual-arm Piper inference with failure recovery — [notes](https://github.com/Danielz-z/ai-engineering-notes/blob/main/openpi_aloha_inference_deployment.md)
+* EMG gesture recognition controlling ZsiBot ZSL-1W wheeled-legged robot (~40ms latency) — [notes](https://github.com/Danielz-z/ai-engineering-notes/blob/main/zsibot_emg_robot_control.md)
+
+### EAV Multimodal Emotion Recognition
+
+* 42-subject EEG-Audio-Video dataset with leakage-free splits; built complete unimodal baselines and late fusion achieving 0.5729 accuracy (private repository)
 
 <br>
 
