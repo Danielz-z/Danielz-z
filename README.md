@@ -9,10 +9,6 @@ Perception → State Modeling → Decision → Action
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Danielz-z&label=Profile%20views&color=0e75b6&style=flat" alt="Danielz-z" />
-</p>
-
-<p align="center">
   <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
@@ -99,6 +95,7 @@ I enjoy discussions around scalable agent architectures, human state modeling, a
 
 * Email: [daniel.zhengzhou@gmail.com](mailto:daniel.zhengzhou@gmail.com)
 * LinkedIn: [www.linkedin.com/in/zheng-zhou-cs](https://www.linkedin.com/in/zheng-zhou-cs)
+* Blog: [amorfati.cn](https://amorfati.cn/)
 
 <p align="center">
   <a href="https://github.com/Danielz-z" target="_blank">
