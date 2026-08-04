@@ -20,25 +20,21 @@ Perception → State Modeling → Decision → Action
 
 ## 🔬 Current Work
 
-I am currently building human-aware embodied agent systems that integrate perception, state modeling, planning, and action. My work focuses on multimodal AI systems combining EEG, vision, and behavioral signals together with robotics integration on embodied platforms such as Aloha and Astribot.
+I am currently building human-aware embodied agent systems that integrate perception, state modeling, planning, and action. My work focuses on multimodal AI systems combining EEG, vision, and behavioral signals, with robotics integration on embodied platforms such as Aloha and Astribot.
 
-<br>
-
-## 🧠 Research Focus
-
-My research interests include cross-subject EEG generalization, multimodal fusion across EEG, vision, language, and audio, as well as behavior-driven human state modeling beyond traditional BCI settings. I am also interested in the deployment of real-time AI systems for embodied and human-aware applications.
-
-<br>
-
-## ⚙️ What I Build
-
-I build human-aware intelligent systems rather than traditional chatbots. My work focuses on closed-loop architectures that integrate perception, state estimation, decision making, action execution, and feedback.
+Unlike traditional chatbots, I build human-aware intelligent systems based on closed-loop architectures: perception → state estimation → decision → action execution → feedback.
 
 ### Example Capabilities
 
 * Emotion → Robot Action (e.g., Happy → approach / interact)
 * EEG → Intention → Control
 * Vision + EEG → Robust State Estimation
+
+<br>
+
+## 🧠 Research Focus
+
+My research interests include cross-subject EEG generalization, multimodal fusion across EEG, vision, language, and audio, as well as behavior-driven human state modeling beyond traditional BCI settings. I am also interested in the deployment of real-time AI systems for embodied and human-aware applications.
 
 <br>
 
