@@ -46,11 +46,11 @@
 
 ### [EEG 情绪识别（MAET 模型）](https://github.com/Danielz-z/LGF-EEG-Emotion)
 
-- 融合多重分形特征、图连接特征和 Transformer
-- 在 SEED-VII 数据集上进行跨被试泛化
-- 关注鲁棒性与泛化能力
-- 论文：[Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
-- 被 IEEE EMBC 2026 接收为 Oral Presentation
+* 融合多重分形特征、图连接特征和 Transformer
+* 在 SEED-VII 数据集上进行跨被试泛化
+* 关注鲁棒性与泛化能力
+* 论文：[Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
+* 被 IEEE EMBC 2026 接收为 Oral Presentation
 
 ### [EEG-BCI-Car](https://github.com/Danielz-z/EEG-BCI-Car)
 
@@ -61,11 +61,11 @@
 
 ### 以人为本的机器人智能体（Astribot & Aloha）
 
-- 融合面部表情识别、EEG 信号和 BCI 范式进行多模态人类状态感知
-- 基于 DeepFace 的情绪识别原型，用于实时机器人交互
-- 探索基于 SSVEP 和 motor imagery 的机器人控制，使用 EEGNet 等模型
-- 设计稳定的事件触发逻辑，减少噪声或不稳定的机器人动作
-- 闭环系统：感知 → 状态估计 → 决策 → 动作 → 反馈
+* 融合面部表情识别、EEG 信号和 BCI 范式进行多模态人类状态感知
+* 基于 DeepFace 的情绪识别原型，用于实时机器人交互
+* 探索基于 SSVEP 和 motor imagery 的机器人控制，使用 EEGNet 等模型
+* 设计稳定的事件触发逻辑，减少噪声或不稳定的机器人动作
+* 闭环系统：感知 → 状态估计 → 决策 → 动作 → 反馈
 
 <br>
 
