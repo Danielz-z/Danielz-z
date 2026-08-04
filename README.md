@@ -83,7 +83,7 @@ I build human-aware intelligent systems rather than traditional chatbots. My wor
   Linux, Docker, Kubernetes, Git, SSH, VSCode Remote, MySQL, Jupyter, LaTeX
 
 * Robotics & Embedded:
-  Astribot SDK, STM32 Embedded Control
+  Astribot SDK, Aloha, STM32 Embedded Control
 
 <br>
 
