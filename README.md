@@ -1,11 +1,11 @@
-<h1 align="center">Hi 👋, I'm Daniel</h1>
+<h1 align="center">Hi, I'm Daniel 👋</h1>
 
 <p align="center">
 Building Human-aware Embodied Agent Systems
 </p>
 
 <p align="center">
-Perception → State Modeling → Decision → Action
+EEG & Multimodal Sensing → State Modeling → Decision → Robot Action
 </p>
 
 <p align="center">
@@ -20,13 +20,13 @@ Perception → State Modeling → Decision → Action
 
 ## 🔬 Current Work
 
-I am currently building human-aware embodied agent systems that integrate perception, state modeling, planning, and action. My work focuses on multimodal AI systems combining EEG, vision, and behavioral signals, with robotics integration on embodied platforms such as Aloha and Astribot.
+I am currently building human-aware embodied agent systems that integrate perception, state modeling, decision-making, and action. My work focuses on multimodal AI systems combining EEG, vision, and behavioral signals, with robotics integration on embodied platforms such as Aloha and Astribot.
 
 Unlike traditional chatbots, I build human-aware intelligent systems based on closed-loop architectures: perception → state estimation → decision → action execution → feedback.
 
 ### Example Capabilities
 
-* Emotion → Robot Action (e.g., Happy → approach / interact)
+* Emotion → Decision → Robot Action (e.g., Happy → approach / interact)
 * EEG → Intention → Control
 * Vision + EEG → Robust State Estimation
 
@@ -34,7 +34,7 @@ Unlike traditional chatbots, I build human-aware intelligent systems based on cl
 
 ## 🧠 Research Focus
 
-My research interests include cross-subject EEG generalization, multimodal fusion across EEG, vision, language, and audio, as well as behavior-driven human state modeling beyond traditional BCI settings. I am also interested in the deployment of real-time AI systems for embodied and human-aware applications.
+My research interests include cross-subject EEG generalization, multimodal fusion across EEG, vision, language, and audio, as well as behavior-driven human state modeling beyond traditional BCI settings. I am also interested in deploying real-time AI for human-aware embodied agent systems.
 
 <br>
 
@@ -84,7 +84,7 @@ Demo video: coming soon
 * Programming: Python, C/C++, Java, SQL, JavaScript, Shell
 
 * AI / Machine Learning:
-  PyTorch, TensorFlow, Scikit-Learn, OpenCV, MNE, Braindecode, EEGNet, Transformer, NumPy, Pandas, Matplotlib
+  PyTorch, TensorFlow, scikit-learn, OpenCV, MNE, Braindecode, EEGNet, Transformer Models, NumPy, Pandas, Matplotlib
 
 * AI Engineering Workflow:
   Claude Code, OpenAI Codex
@@ -93,19 +93,13 @@ Demo video: coming soon
   Linux, Docker, Kubernetes, Git, SSH, VSCode Remote, MySQL, Jupyter, LaTeX
 
 * Robotics & Embedded:
-  Astribot SDK, Aloha, STM32 Embedded Control
+  Astribot SDK, ALOHA, OpenPI, STM32 Embedded Control
 
 <br>
 
 ## 🤝 Open to Collaborate
 
-I am open to collaboration on multimodal agent systems, embodied AI, EEG and vision fusion, and real-world deployment of intelligent systems.
-
-<br>
-
-## 💡 Looking for Discussion
-
-I enjoy discussions around scalable agent architectures, human state modeling, and system design for real-world AI deployment.
+I am open to collaboration and discussion on multimodal agent systems, embodied AI, EEG and vision fusion, human state modeling, scalable agent architectures, and real-world deployment of intelligent systems.
 
 <br>
 
