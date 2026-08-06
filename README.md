@@ -20,15 +20,16 @@ EEG & Multimodal Sensing → State Modeling → Decision → Robot Action
 
 ## 🔬 Current Work
 
-I am currently building human-aware embodied agent systems that integrate perception, state modeling, decision-making, and action. My work focuses on multimodal AI systems combining EEG, vision, and behavioral signals, with robotics integration on embodied platforms such as Aloha and Astribot.
+I am currently building human-aware embodied agent systems that integrate multimodal sensing, state modeling, decision-making, and action. My work focuses on AI systems combining EEG, vision, and physiological or behavioral signals, with robotics integration on embodied platforms such as ALOHA, Astribot, and ZsiBot.
 
-Unlike traditional chatbots, I build human-aware intelligent systems based on closed-loop architectures: perception → state estimation → decision → action execution → feedback.
+These systems follow closed-loop architectures: perception → state estimation → decision → action execution → feedback.
 
 ### Example Capabilities
 
-* Emotion → Decision → Robot Action (e.g., Happy → approach / interact)
-* EEG → Intention → Control
-* Vision + EEG → Robust State Estimation
+* EEG → Intention Decoding → Decision → STM32 Vehicle Control
+* Facial Emotion → Decision → Safety-Gated Astribot Action
+* EMG Gesture → Decision → ZsiBot Robot Control
+* Vision + Robot State → OpenPI Policy → ALOHA Dual-Arm Action
 
 <br>
 
