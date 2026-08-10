@@ -24,6 +24,9 @@
 
 ## 必须原样保留的术语
 
+- `Daniel`
+- `English`
+- `简体中文`
 - `EEG`
 - `EMG`
 - `BCI`

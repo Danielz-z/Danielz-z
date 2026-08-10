@@ -12,6 +12,9 @@ class WorkflowConfigurationTests(unittest.TestCase):
         self.assertIn("自然、专业、简洁", rules)
         self.assertIn("不添加英文源稿中不存在的事实", rules)
         for term in (
+            "Daniel",
+            "English",
+            "简体中文",
             "EEG",
             "EMG",
             "OpenPI",
@@ -37,13 +40,17 @@ class WorkflowConfigurationTests(unittest.TestCase):
             "cancel-in-progress: true",
             "GITHUB_MODELS_MODEL: openai/gpt-4.1",
             "python3 .github/scripts/sync_profile_readme.py",
-            "git ls-remote origin refs/heads/main",
-            '"$REMOTE_SHA" != "$GITHUB_SHA"',
+            "git rev-parse HEAD:README.md",
+            "git rev-parse origin/main:README.md",
+            "git rev-parse origin/main:README.zh-CN.md",
+            '"$LOCAL_SOURCE_BLOB" != "$REMOTE_SOURCE_BLOB"',
+            "gh api --method PUT",
             "chore(profile): sync Chinese README",
         )
         for fragment in expected_fragments:
             with self.subTest(fragment=fragment):
                 self.assertIn(fragment, workflow)
+        self.assertNotIn('"$REMOTE_SHA" != "$GITHUB_SHA"', workflow)
 
 
 if __name__ == "__main__":

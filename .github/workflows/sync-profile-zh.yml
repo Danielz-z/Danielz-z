@@ -36,24 +36,32 @@ jobs:
             --target README.zh-CN.md \
             --rules .github/profile-translation-rules.md
 
-      - name: Check that this run is still current
-        id: freshness
-        run: |
-          REMOTE_SHA="$(git ls-remote origin refs/heads/main | cut -f1)"
-          if [ "$REMOTE_SHA" != "$GITHUB_SHA" ]; then
-            echo "A newer main revision exists; skipping this stale result."
-            echo "stale=true" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Commit the synchronized README
-        if: steps.freshness.outputs.stale != 'true'
+      - name: Publish the synchronized README
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if git diff --quiet -- README.zh-CN.md; then
             echo "README.zh-CN.md is already up to date."
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.zh-CN.md
-          git commit -m "chore(profile): sync Chinese README"
-          git push origin HEAD:main
+
+          LOCAL_SOURCE_BLOB="$(git rev-parse HEAD:README.md)"
+          git fetch --no-tags origin main
+          REMOTE_SOURCE_BLOB="$(git rev-parse origin/main:README.md)"
+          if [ "$LOCAL_SOURCE_BLOB" != "$REMOTE_SOURCE_BLOB" ]; then
+            echo "README.md changed during this run; a newer run will synchronize it."
+            exit 0
+          fi
+
+          TARGET_BLOB="$(git rev-parse origin/main:README.zh-CN.md)"
+          ENCODED_CONTENT="$(base64 -w 0 README.zh-CN.md)"
+          jq -n \
+            --arg message "chore(profile): sync Chinese README" \
+            --arg content "$ENCODED_CONTENT" \
+            --arg sha "$TARGET_BLOB" \
+            --arg branch "main" \
+            '{message: $message, content: $content, sha: $sha, branch: $branch}' \
+            | gh api --method PUT \
+                -H "X-GitHub-Api-Version: 2022-11-28" \
+                "repos/${GITHUB_REPOSITORY}/contents/README.zh-CN.md" \
+                --input -

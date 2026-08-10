@@ -27,6 +27,8 @@ SOURCE = """<h1 align="center">Hi, I'm Daniel</h1>
 
 EEG systems using OpenPI.
 
+Human-aware systems.
+
 ### Capabilities
 
 * EEG control — [notes](https://example.com/notes)
@@ -39,6 +41,8 @@ TRANSLATION = """<h1 align="center">你好，我是 Daniel</h1>
 ## 目前的工作
 
 使用 OpenPI 构建 EEG 系统。
+
+构建以人为本的系统。
 
 ### 主要能力
 
@@ -76,8 +80,17 @@ class ValidateTranslationTests(unittest.TestCase):
             "* EEG 控制\n\n### 主要能力",
         )
         changed_html = TRANSLATION.replace("<p>", "<div>").replace("</p>", "</div>")
+        changed_attribute = TRANSLATION.replace('align="center"', 'align="left"')
+        changed_list_depth = TRANSLATION.replace("* EEG 控制", "  * EEG 控制")
+        missing_paragraph = TRANSLATION.replace("\n构建以人为本的系统。\n", "\n")
 
-        for invalid in (moved_list, changed_html):
+        for invalid in (
+            moved_list,
+            changed_html,
+            changed_attribute,
+            changed_list_depth,
+            missing_paragraph,
+        ):
             with self.subTest(invalid=invalid[:80]):
                 with self.assertRaisesRegex(
                     sync_profile_readme.TranslationError,
@@ -101,6 +114,45 @@ class ValidateTranslationTests(unittest.TestCase):
                         invalid,
                         protected_terms=("EEG", "OpenPI"),
                     )
+
+    def test_rejects_fewer_occurrences_of_a_protected_term(self):
+        one_eeg_removed = TRANSLATION.replace("EEG 系统", "脑电系统", 1)
+
+        with self.assertRaisesRegex(
+            sync_profile_readme.TranslationError,
+            "Protected term counts changed",
+        ):
+            sync_profile_readme.validate_translation(
+                SOURCE,
+                one_eeg_removed,
+                protected_terms=("EEG", "OpenPI"),
+            )
+
+    def test_rejects_output_that_is_still_predominantly_english(self):
+        mostly_english = """<h1 align="center">Hi, I am Daniel 中</h1>
+
+<p><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a></p>
+
+## Current Work
+
+OpenPI powers EEG systems.
+
+Human-aware systems.
+
+### Capabilities
+
+* EEG control — [notes](https://example.com/notes)
+"""
+
+        with self.assertRaisesRegex(
+            sync_profile_readme.TranslationError,
+            "does not contain enough Chinese text",
+        ):
+            sync_profile_readme.validate_translation(
+                SOURCE,
+                mostly_english,
+                protected_terms=("EEG", "OpenPI"),
+            )
 
 
 class TranslationRulesTests(unittest.TestCase):

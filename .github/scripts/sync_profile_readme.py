@@ -9,6 +9,7 @@ import os
 import re
 import sys
 from collections import Counter
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Callable
 from urllib.error import HTTPError, URLError
@@ -16,6 +17,9 @@ from urllib.request import Request, urlopen
 
 
 MODELS_ENDPOINT = "https://models.github.ai/inference/chat/completions"
+MIN_CHINESE_TEXT_RATIO = 0.15
+HTMLAttributes = tuple[tuple[str, str | None], ...]
+HTMLToken = tuple[str, str, HTMLAttributes]
 
 
 class TranslationError(RuntimeError):
@@ -80,19 +84,82 @@ def parse_protected_terms(rules: str) -> tuple[str, ...]:
     return tuple(dict.fromkeys(terms))
 
 
-def _document_structure(markdown: str) -> tuple[tuple[str, ...], tuple[str, ...]]:
-    markdown_tokens: list[tuple[int, str]] = []
-    for match in re.finditer(r"^(#{1,6})\s+", markdown, re.MULTILINE):
-        markdown_tokens.append((match.start(), f"heading:{len(match.group(1))}"))
-    for match in re.finditer(r"^\s*([-+*]|\d+[.)])\s+", markdown, re.MULTILINE):
-        marker = "ordered" if match.group(1)[0].isdigit() else "unordered"
-        markdown_tokens.append((match.start(), f"list:{marker}"))
-    markdown_outline = tuple(token for _, token in sorted(markdown_tokens))
-    html_outline = tuple(
-        f"{'close:' if match.group(1) else 'open:'}{match.group(2).lower()}"
-        for match in re.finditer(r"<\s*(/?)\s*([A-Za-z][A-Za-z0-9]*)\b[^>]*>", markdown)
-    )
-    return markdown_outline, html_outline
+class _HTMLStructureParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.tokens: list[HTMLToken] = []
+
+    def _append_tag(
+        self,
+        kind: str,
+        tag: str,
+        attrs: list[tuple[str, str | None]],
+    ) -> None:
+        self.tokens.append((kind, tag, tuple(sorted(attrs))))
+
+    def handle_starttag(
+        self,
+        tag: str,
+        attrs: list[tuple[str, str | None]],
+    ) -> None:
+        self._append_tag("open", tag, attrs)
+
+    def handle_startendtag(
+        self,
+        tag: str,
+        attrs: list[tuple[str, str | None]],
+    ) -> None:
+        self._append_tag("self-closing", tag, attrs)
+
+    def handle_endtag(self, tag: str) -> None:
+        self._append_tag("close", tag, [])
+
+
+def _markdown_outline(markdown: str) -> tuple[str, ...]:
+    outline: list[str] = []
+    in_paragraph = False
+
+    def end_paragraph() -> None:
+        nonlocal in_paragraph
+        if in_paragraph:
+            outline.append("paragraph")
+            in_paragraph = False
+
+    for line in markdown.splitlines():
+        stripped = line.strip()
+        if not stripped:
+            end_paragraph()
+            continue
+
+        heading = re.match(r"^(#{1,6})\s+", line)
+        list_item = re.match(r"^(\s*)([-+*]|\d+[.)])\s+", line)
+        if heading:
+            end_paragraph()
+            outline.append(f"heading:{len(heading.group(1))}")
+        elif list_item:
+            end_paragraph()
+            indentation = len(list_item.group(1).expandtabs(4))
+            marker = "ordered" if list_item.group(2)[0].isdigit() else "unordered"
+            outline.append(f"list:{indentation}:{marker}")
+        elif stripped.startswith("<") and stripped.endswith(">"):
+            end_paragraph()
+        else:
+            in_paragraph = True
+
+    end_paragraph()
+    return tuple(outline)
+
+
+def _document_structure(
+    markdown: str,
+) -> tuple[
+    tuple[str, ...],
+    tuple[HTMLToken, ...],
+]:
+    parser = _HTMLStructureParser()
+    parser.feed(markdown)
+    parser.close()
+    return _markdown_outline(markdown), tuple(parser.tokens)
 
 
 def _assets(markdown: str) -> Counter[str]:
@@ -100,6 +167,14 @@ def _assets(markdown: str) -> Counter[str]:
     html_links = re.findall(r"\b(?:href|src)=[\"']([^\"']+)[\"']", markdown)
     emails = re.findall(r"[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}", markdown)
     return Counter(markdown_links + html_links + emails)
+
+
+def _chinese_text_ratio(markdown: str) -> float:
+    visible_text = re.sub(r"https?://\S+|<[^>]+>", "", markdown)
+    chinese_characters = len(re.findall(r"[\u3400-\u9fff]", visible_text))
+    latin_characters = len(re.findall(r"[A-Za-z]", visible_text))
+    total_letters = chinese_characters + latin_characters
+    return chinese_characters / total_letters if total_letters else 0.0
 
 
 def validate_translation(
@@ -114,7 +189,7 @@ def validate_translation(
     first_source_line = source.lstrip().splitlines()[0]
     first_translation_line = stripped.splitlines()[0]
     has_wrapper = (
-        "```" in translation
+        translation.count("```") != source.count("```")
         or first_translation_line.lower().startswith("here is")
         or first_translation_line.startswith(("以下是", "当然"))
         or (
@@ -126,17 +201,23 @@ def validate_translation(
         raise TranslationError(
             "The generated output contains model commentary or code fences"
         )
-    if not re.search(r"[\u3400-\u9fff]", translation):
-        raise TranslationError("The generated translation does not contain Chinese text")
+    if _chinese_text_ratio(translation) < MIN_CHINESE_TEXT_RATIO:
+        raise TranslationError(
+            "The generated translation does not contain enough Chinese text"
+        )
     if _document_structure(source) != _document_structure(translation):
         raise TranslationError("Markdown or HTML document structure changed")
     if _assets(source) != _assets(translation):
         raise TranslationError("Links, images, or email addresses changed")
-    missing_terms = [
-        term for term in protected_terms if term in source and term not in translation
+    changed_term_counts = [
+        f"{term} ({source.count(term)} -> {translation.count(term)})"
+        for term in protected_terms
+        if source.count(term) != translation.count(term)
     ]
-    if missing_terms:
-        raise TranslationError(f"Protected terms are missing: {', '.join(missing_terms)}")
+    if changed_term_counts:
+        raise TranslationError(
+            f"Protected term counts changed: {', '.join(changed_term_counts)}"
+        )
 
 
 def _translation_prompt(
