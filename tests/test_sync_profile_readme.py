@@ -201,7 +201,7 @@ class GitHubModelsClientTests(unittest.TestCase):
 
         client = sync_profile_readme.GitHubModelsClient(
             token="test-token",
-            model="openai/gpt-4.1",
+            model="openai/gpt-4o",
             opener=opener,
         )
 
@@ -210,7 +210,7 @@ class GitHubModelsClientTests(unittest.TestCase):
         self.assertEqual(result, TRANSLATION)
         self.assertEqual(captured["timeout"], 60)
         body = json.loads(captured["request"].data)
-        self.assertEqual(body["model"], "openai/gpt-4.1")
+        self.assertEqual(body["model"], "openai/gpt-4o")
         self.assertEqual(body["temperature"], 0.2)
         self.assertEqual(
             body["messages"],
@@ -236,7 +236,7 @@ class GitHubModelsClientTests(unittest.TestCase):
 
         client = sync_profile_readme.GitHubModelsClient(
             token="test-token",
-            model="openai/gpt-4.1",
+            model="openai/gpt-4o",
             opener=opener,
         )
 
@@ -335,7 +335,7 @@ class SyncFilesTests(unittest.TestCase):
 
 
 class CommandLineTests(unittest.TestCase):
-    def test_main_uses_environment_token_and_selected_model(self):
+    def test_main_uses_environment_token_and_current_default_model(self):
         captured = {}
         fake_client = _FakeClient([TRANSLATION, TRANSLATION])
 
@@ -365,14 +365,13 @@ class CommandLineTests(unittest.TestCase):
                     ],
                     environ={
                         "GITHUB_TOKEN": "workflow-token",
-                        "GITHUB_MODELS_MODEL": "openai/test-model",
                     },
                     client_factory=client_factory,
                 )
 
         self.assertEqual(result, 0)
         self.assertEqual(captured["token"], "workflow-token")
-        self.assertEqual(captured["model"], "openai/test-model")
+        self.assertEqual(captured["model"], "openai/gpt-4o")
 
 
 if __name__ == "__main__":

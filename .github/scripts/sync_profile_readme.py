@@ -366,7 +366,7 @@ def main(
     token = environment.get("GITHUB_TOKEN")
     if not token:
         raise TranslationError("GITHUB_TOKEN is required")
-    model = environment.get("GITHUB_MODELS_MODEL", "openai/gpt-4.1")
+    model = environment.get("GITHUB_MODELS_MODEL", "openai/gpt-4o")
     client = client_factory(token=token, model=model)
     changed = sync_files(args.source, args.target, args.rules, client)
     print("Chinese README updated." if changed else "Chinese README already up to date.")

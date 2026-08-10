@@ -38,7 +38,7 @@ class WorkflowConfigurationTests(unittest.TestCase):
             "contents: write",
             "models: read",
             "cancel-in-progress: true",
-            "GITHUB_MODELS_MODEL: openai/gpt-4.1",
+            "GITHUB_MODELS_MODEL: openai/gpt-4o",
             "python3 .github/scripts/sync_profile_readme.py",
             "git rev-parse HEAD:README.md",
             "git rev-parse origin/main:README.md",

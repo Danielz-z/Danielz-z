@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  GITHUB_MODELS_MODEL: openai/gpt-4.1
+  GITHUB_MODELS_MODEL: openai/gpt-4o
 
 jobs:
   sync:
