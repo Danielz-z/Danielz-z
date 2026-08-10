@@ -196,7 +196,14 @@ class DeepSeekClientTests(unittest.TestCase):
             captured["request"] = request
             captured["timeout"] = timeout
             return _Response(
-                {"choices": [{"message": {"content": TRANSLATION}}]}
+                {
+                    "choices": [
+                        {
+                            "finish_reason": "stop",
+                            "message": {"content": TRANSLATION},
+                        }
+                    ]
+                }
             )
 
         client = sync_profile_readme.DeepSeekClient(
@@ -252,6 +259,39 @@ class DeepSeekClientTests(unittest.TestCase):
             client.complete("system", "user")
 
         self.assertNotIn("secret", str(raised.exception))
+
+    def test_rejects_incomplete_or_empty_responses(self):
+        cases = (
+            ("length", TRANSLATION),
+            ("content_filter", None),
+            ("stop", "   "),
+        )
+
+        for finish_reason, content in cases:
+            with self.subTest(finish_reason=finish_reason, content=content):
+                def opener(request, timeout):
+                    return _Response(
+                        {
+                            "choices": [
+                                {
+                                    "finish_reason": finish_reason,
+                                    "message": {"content": content},
+                                }
+                            ]
+                        }
+                    )
+
+                client = sync_profile_readme.DeepSeekClient(
+                    token="test-token",
+                    model="deepseek-v4-flash",
+                    opener=opener,
+                )
+
+                with self.assertRaisesRegex(
+                    sync_profile_readme.TranslationError,
+                    "DeepSeek did not return a complete response",
+                ):
+                    client.complete("system", "user")
 
 
 class _FakeClient:

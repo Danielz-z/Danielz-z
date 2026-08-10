@@ -73,9 +73,18 @@ class DeepSeekClient:
         except (json.JSONDecodeError, UnicodeDecodeError) as error:
             raise TranslationError("DeepSeek returned invalid JSON") from error
         try:
-            return data["choices"][0]["message"]["content"]
+            choice = data["choices"][0]
+            finish_reason = choice["finish_reason"]
+            content = choice["message"]["content"]
         except (KeyError, IndexError, TypeError) as error:
             raise TranslationError("DeepSeek returned an invalid response") from error
+        if (
+            finish_reason != "stop"
+            or not isinstance(content, str)
+            or not content.strip()
+        ):
+            raise TranslationError("DeepSeek did not return a complete response")
+        return content
 
 
 def parse_protected_terms(rules: str) -> tuple[str, ...]:
