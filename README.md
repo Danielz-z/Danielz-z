@@ -29,7 +29,7 @@ These systems follow closed-loop architectures: perception → state estimation 
 * EEG → Intention Decoding → Decision → STM32 Vehicle Control
 * Facial Emotion → Decision → Safety-Gated Astribot Action
 * EMG Gesture → Decision → ZsiBot Robot Control
-* Vision + Robot State → OpenPI Policy → ALOHA Dual-Arm Action
+* Vision + Robot State + EEG Signals→ OpenPI Policy → ALOHA Dual-Arm Action
 
 <br>
 
