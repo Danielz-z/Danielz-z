@@ -11,6 +11,13 @@ class WorkflowConfigurationTests(unittest.TestCase):
 
         self.assertIn("自然、专业、简洁", rules)
         self.assertIn("不添加英文源稿中不存在的事实", rules)
+        for preferred_translation in (
+            "robotics integration：机器人系统集成",
+            "safety-gated action：通过安全门控执行动作",
+            "late fusion：后期融合",
+            "Accepted for Oral Presentation：获口头报告录用",
+        ):
+            self.assertIn(preferred_translation, rules)
         for term in (
             "Daniel",
             "English",

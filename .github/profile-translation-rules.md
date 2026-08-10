@@ -21,6 +21,10 @@
 - multimodal fusion：多模态融合
 - subject-independent：跨被试
 - real-world deployment：真实场景部署
+- robotics integration：机器人系统集成
+- safety-gated action：通过安全门控执行动作
+- late fusion：后期融合
+- Accepted for Oral Presentation：获口头报告录用
 
 ## 必须原样保留的术语
 

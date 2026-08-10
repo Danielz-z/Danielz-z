@@ -20,14 +20,14 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 
 ## 🔬 目前在做什么
 
-我目前正在构建以人为本的具身智能体系统，整合多模态感知、状态建模、决策与动作执行。我的工作聚焦于融合 EEG、视觉以及生理或行为信号的 AI 系统，并在 ALOHA、Astribot 和 ZsiBot 等具身平台上进行机器人集成。
+我目前正在构建以人为本的具身智能体系统，整合多模态感知、状态建模、决策与动作执行。我的工作聚焦于融合 EEG、视觉以及生理或行为信号的 AI 系统，并在 ALOHA、Astribot 和 ZsiBot 等具身平台上开展机器人系统集成。
 
 这些系统遵循闭环架构：感知 → 状态估计 → 决策 → 动作执行 → 反馈。
 
 ### 能力示例
 
 * EEG → 意图解码 → 决策 → STM32 小车控制
-* 面部情绪 → 决策 → 安全门控的 Astribot 动作
+* 面部情绪 → 决策 → 通过安全门控执行 Astribot 动作
 * EMG 手势 → 决策 → ZsiBot 机器人控制
 * 视觉 + 机器人状态 + EEG 信号 → OpenPI 策略 → ALOHA 双臂动作
 
@@ -47,7 +47,7 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 * 在 SEED-VII 数据集上进行跨被试泛化
 * 关注鲁棒性与泛化能力
 * 论文：[Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
-* 被 IEEE EMBC 2026 接收为 Oral Presentation
+* 获 IEEE EMBC 2026 口头报告录用
 
 ### [EEG-BCI-Car](https://github.com/Danielz-z/EEG-BCI-Car)
 
@@ -70,7 +70,7 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 
 ### EAV 多模态情绪识别
 
-* 42 被试 EEG-Audio-Video 多模态情绪识别数据集，采用防泄漏数据划分；构建了完整的单模态基线与晚期融合，准确率达 0.5729
+* 42 被试 EEG-Audio-Video 多模态情绪识别数据集，采用防泄漏数据划分；构建了完整的单模态基线与后期融合，准确率达 0.5729
 
 ### [个人网站与 AI 基础设施](https://amorfati.cn/)
 
