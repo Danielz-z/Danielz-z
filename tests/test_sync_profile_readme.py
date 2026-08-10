@@ -188,8 +188,8 @@ class _Response:
         return json.dumps(self.payload).encode()
 
 
-class GitHubModelsClientTests(unittest.TestCase):
-    def test_sends_low_temperature_chat_request_and_returns_content(self):
+class DeepSeekClientTests(unittest.TestCase):
+    def test_sends_non_thinking_low_temperature_chat_request_and_returns_content(self):
         captured = {}
 
         def opener(request, timeout):
@@ -199,9 +199,9 @@ class GitHubModelsClientTests(unittest.TestCase):
                 {"choices": [{"message": {"content": TRANSLATION}}]}
             )
 
-        client = sync_profile_readme.GitHubModelsClient(
+        client = sync_profile_readme.DeepSeekClient(
             token="test-token",
-            model="openai/gpt-4o",
+            model="deepseek-v4-flash",
             opener=opener,
         )
 
@@ -210,8 +210,13 @@ class GitHubModelsClientTests(unittest.TestCase):
         self.assertEqual(result, TRANSLATION)
         self.assertEqual(captured["timeout"], 60)
         body = json.loads(captured["request"].data)
-        self.assertEqual(body["model"], "openai/gpt-4o")
+        self.assertEqual(
+            captured["request"].full_url,
+            "https://api.deepseek.com/chat/completions",
+        )
+        self.assertEqual(body["model"], "deepseek-v4-flash")
         self.assertEqual(body["temperature"], 0.2)
+        self.assertEqual(body["thinking"], {"type": "disabled"})
         self.assertEqual(
             body["messages"],
             [
@@ -234,15 +239,15 @@ class GitHubModelsClientTests(unittest.TestCase):
                 fp=io.BytesIO(b'{"secret":"must not leak"}'),
             )
 
-        client = sync_profile_readme.GitHubModelsClient(
+        client = sync_profile_readme.DeepSeekClient(
             token="test-token",
-            model="openai/gpt-4o",
+            model="deepseek-v4-flash",
             opener=opener,
         )
 
         with self.assertRaisesRegex(
             sync_profile_readme.TranslationError,
-            "GitHub Models request failed with HTTP 429",
+            "DeepSeek request failed with HTTP 429",
         ) as raised:
             client.complete("system", "user")
 
@@ -335,7 +340,7 @@ class SyncFilesTests(unittest.TestCase):
 
 
 class CommandLineTests(unittest.TestCase):
-    def test_main_uses_environment_token_and_current_default_model(self):
+    def test_main_uses_deepseek_api_key_and_current_default_model(self):
         captured = {}
         fake_client = _FakeClient([TRANSLATION, TRANSLATION])
 
@@ -364,14 +369,14 @@ class CommandLineTests(unittest.TestCase):
                         str(rules_path),
                     ],
                     environ={
-                        "GITHUB_TOKEN": "workflow-token",
+                        "DEEPSEEK_API_KEY": "deepseek-token",
                     },
                     client_factory=client_factory,
                 )
 
         self.assertEqual(result, 0)
-        self.assertEqual(captured["token"], "workflow-token")
-        self.assertEqual(captured["model"], "openai/gpt-4o")
+        self.assertEqual(captured["token"], "deepseek-token")
+        self.assertEqual(captured["model"], "deepseek-v4-flash")
 
 
 if __name__ == "__main__":

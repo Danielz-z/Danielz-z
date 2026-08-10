@@ -16,7 +16,7 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
 
-MODELS_ENDPOINT = "https://models.github.ai/inference/chat/completions"
+DEEPSEEK_ENDPOINT = "https://api.deepseek.com/chat/completions"
 MIN_CHINESE_TEXT_RATIO = 0.15
 HTMLAttributes = tuple[tuple[str, str | None], ...]
 HTMLToken = tuple[str, str, HTMLAttributes]
@@ -26,8 +26,8 @@ class TranslationError(RuntimeError):
     """Raised when generated Markdown is unsafe to publish."""
 
 
-class GitHubModelsClient:
-    """Small GitHub Models chat-completions client."""
+class DeepSeekClient:
+    """Small DeepSeek chat-completions client."""
 
     def __init__(
         self,
@@ -44,6 +44,7 @@ class GitHubModelsClient:
             {
                 "model": self.model,
                 "temperature": 0.2,
+                "thinking": {"type": "disabled"},
                 "messages": [
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt},
@@ -51,10 +52,9 @@ class GitHubModelsClient:
             }
         ).encode()
         request = Request(
-            MODELS_ENDPOINT,
+            DEEPSEEK_ENDPOINT,
             data=payload,
             headers={
-                "Accept": "application/vnd.github+json",
                 "Authorization": f"Bearer {self.token}",
                 "Content-Type": "application/json",
             },
@@ -66,16 +66,16 @@ class GitHubModelsClient:
         except HTTPError as error:
             error.close()
             raise TranslationError(
-                f"GitHub Models request failed with HTTP {error.code}"
+                f"DeepSeek request failed with HTTP {error.code}"
             ) from error
         except (URLError, TimeoutError) as error:
-            raise TranslationError("GitHub Models request failed") from error
+            raise TranslationError("DeepSeek request failed") from error
         except (json.JSONDecodeError, UnicodeDecodeError) as error:
-            raise TranslationError("GitHub Models returned invalid JSON") from error
+            raise TranslationError("DeepSeek returned invalid JSON") from error
         try:
             return data["choices"][0]["message"]["content"]
         except (KeyError, IndexError, TypeError) as error:
-            raise TranslationError("GitHub Models returned an invalid response") from error
+            raise TranslationError("DeepSeek returned an invalid response") from error
 
 
 def parse_protected_terms(rules: str) -> tuple[str, ...]:
@@ -328,7 +328,7 @@ def sync_files(
     source_path: Path,
     target_path: Path,
     rules_path: Path,
-    client: GitHubModelsClient,
+    client: DeepSeekClient,
 ) -> bool:
     """Generate, validate, and atomically update the translated README."""
     source = source_path.read_text(encoding="utf-8")
@@ -354,7 +354,7 @@ def sync_files(
 def main(
     argv: list[str] | None = None,
     environ: dict[str, str] | None = None,
-    client_factory: Callable[..., GitHubModelsClient] = GitHubModelsClient,
+    client_factory: Callable[..., DeepSeekClient] = DeepSeekClient,
 ) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, required=True)
@@ -363,10 +363,10 @@ def main(
     args = parser.parse_args(argv)
 
     environment = os.environ if environ is None else environ
-    token = environment.get("GITHUB_TOKEN")
+    token = environment.get("DEEPSEEK_API_KEY")
     if not token:
-        raise TranslationError("GITHUB_TOKEN is required")
-    model = environment.get("GITHUB_MODELS_MODEL", "openai/gpt-4o")
+        raise TranslationError("DEEPSEEK_API_KEY is required")
+    model = environment.get("DEEPSEEK_MODEL", "deepseek-v4-flash")
     client = client_factory(token=token, model=model)
     changed = sync_files(args.source, args.target, args.rules, client)
     print("Chinese README updated." if changed else "Chinese README already up to date.")

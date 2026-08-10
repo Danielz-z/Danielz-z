@@ -36,9 +36,9 @@ class WorkflowConfigurationTests(unittest.TestCase):
             "branches: [main]",
             "paths: [README.md]",
             "contents: write",
-            "models: read",
             "cancel-in-progress: true",
-            "GITHUB_MODELS_MODEL: openai/gpt-4o",
+            "DEEPSEEK_MODEL: deepseek-v4-flash",
+            "DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}",
             "python3 .github/scripts/sync_profile_readme.py",
             "git rev-parse HEAD:README.md",
             "git rev-parse origin/main:README.md",
@@ -56,6 +56,8 @@ class WorkflowConfigurationTests(unittest.TestCase):
                 self.assertIn(fragment, workflow)
         self.assertNotIn('"$REMOTE_SHA" != "$GITHUB_SHA"', workflow)
         self.assertNotIn("gh api --method PUT", workflow)
+        self.assertNotIn("models: read", workflow)
+        self.assertNotIn("GITHUB_MODELS", workflow)
 
 
 if __name__ == "__main__":

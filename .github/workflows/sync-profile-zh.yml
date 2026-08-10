@@ -8,14 +8,13 @@ on:
 
 permissions:
   contents: write
-  models: read
 
 concurrency:
   group: sync-profile-zh-${{ github.ref }}
   cancel-in-progress: true
 
 env:
-  GITHUB_MODELS_MODEL: openai/gpt-4o
+  DEEPSEEK_MODEL: deepseek-v4-flash
 
 jobs:
   sync:
@@ -29,7 +28,7 @@ jobs:
 
       - name: Generate and validate the Chinese README
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python3 .github/scripts/sync_profile_readme.py \
             --source README.md \
