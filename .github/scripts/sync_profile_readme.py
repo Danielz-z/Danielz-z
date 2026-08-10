@@ -162,11 +162,73 @@ def _document_structure(
     return _markdown_outline(markdown), tuple(parser.tokens)
 
 
-def _assets(markdown: str) -> Counter[str]:
-    markdown_links = re.findall(r"!?\[[^\]]*\]\(([^)\s]+)(?:\s+[^)]*)?\)", markdown)
-    html_links = re.findall(r"\b(?:href|src)=[\"']([^\"']+)[\"']", markdown)
-    emails = re.findall(r"[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}", markdown)
-    return Counter(markdown_links + html_links + emails)
+def _markdown_links(markdown: str) -> list[tuple[str, str]]:
+    links: list[tuple[str, str]] = []
+    position = 0
+    link_start = re.compile(r"(!?)\[[^\]\n]*\]\(")
+
+    while match := link_start.search(markdown, position):
+        destination_start = match.end()
+        cursor = destination_start
+        depth = 1
+        escaped = False
+        while cursor < len(markdown):
+            character = markdown[cursor]
+            if escaped:
+                escaped = False
+            elif character == "\\":
+                escaped = True
+            elif character == "(":
+                depth += 1
+            elif character == ")":
+                depth -= 1
+                if depth == 0:
+                    break
+            cursor += 1
+
+        if depth != 0:
+            position = match.end()
+            continue
+
+        kind = "image" if match.group(1) else "link"
+        destination = markdown[destination_start:cursor].strip()
+        links.append((kind, destination))
+        position = cursor + 1
+
+    return links
+
+
+def _urls(text: str) -> list[str]:
+    urls: list[str] = []
+    position = 0
+    while match := re.search(r"https?://", text[position:]):
+        start = position + match.start()
+        cursor = start
+        parenthesis_depth = 0
+        while cursor < len(text):
+            character = text[cursor]
+            if character.isspace() or character in "<>\"'":
+                break
+            if character == "(":
+                parenthesis_depth += 1
+            elif character == ")":
+                if parenthesis_depth == 0:
+                    break
+                parenthesis_depth -= 1
+            cursor += 1
+        urls.append(text[start:cursor].rstrip(".,;!?"))
+        position = cursor
+    return urls
+
+
+def _assets(markdown: str) -> Counter[tuple[str, str]]:
+    markdown_links = _markdown_links(markdown)
+    urls = [("url", url) for url in _urls(markdown)]
+    emails = [
+        ("email", email)
+        for email in re.findall(r"[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}", markdown)
+    ]
+    return Counter(markdown_links + urls + emails)
 
 
 def _chinese_text_ratio(markdown: str) -> float:

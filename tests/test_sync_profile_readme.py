@@ -31,7 +31,7 @@ Human-aware systems.
 
 ### Capabilities
 
-* EEG control — [notes](https://example.com/notes)
+* EEG control — [notes](https://example.com/notes_(v1)_en)
 """
 
 TRANSLATION = """<h1 align="center">你好，我是 Daniel</h1>
@@ -46,7 +46,7 @@ TRANSLATION = """<h1 align="center">你好，我是 Daniel</h1>
 
 ### 主要能力
 
-* EEG 控制 — [笔记](https://example.com/notes)
+* EEG 控制 — [笔记](https://example.com/notes_(v1)_en)
 """
 
 
@@ -105,6 +105,8 @@ class ValidateTranslationTests(unittest.TestCase):
     def test_rejects_missing_assets_and_protected_terms(self):
         for invalid in (
             TRANSLATION.replace("https://example.com/notes", "https://example.com/other"),
+            TRANSLATION.replace("[笔记]", "![笔记]"),
+            TRANSLATION.replace("_en)", "_changed)"),
             TRANSLATION.replace("OpenPI", "开放式策略工具"),
         ):
             with self.subTest(invalid=invalid[-80:]):
@@ -141,7 +143,7 @@ Human-aware systems.
 
 ### Capabilities
 
-* EEG control — [notes](https://example.com/notes)
+* EEG control — [notes](https://example.com/notes_(v1)_en)
 """
 
         with self.assertRaisesRegex(

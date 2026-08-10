@@ -46,22 +46,56 @@ jobs:
           fi
 
           LOCAL_SOURCE_BLOB="$(git rev-parse HEAD:README.md)"
-          git fetch --no-tags origin main
-          REMOTE_SOURCE_BLOB="$(git rev-parse origin/main:README.md)"
-          if [ "$LOCAL_SOURCE_BLOB" != "$REMOTE_SOURCE_BLOB" ]; then
-            echo "README.md changed during this run; a newer run will synchronize it."
-            exit 0
-          fi
-
-          TARGET_BLOB="$(git rev-parse origin/main:README.zh-CN.md)"
+          LOCAL_TARGET_BLOB="$(git rev-parse HEAD:README.zh-CN.md)"
           ENCODED_CONTENT="$(base64 -w 0 README.zh-CN.md)"
-          jq -n \
-            --arg message "chore(profile): sync Chinese README" \
-            --arg content "$ENCODED_CONTENT" \
-            --arg sha "$TARGET_BLOB" \
-            --arg branch "main" \
-            '{message: $message, content: $content, sha: $sha, branch: $branch}' \
-            | gh api --method PUT \
-                -H "X-GitHub-Api-Version: 2022-11-28" \
-                "repos/${GITHUB_REPOSITORY}/contents/README.zh-CN.md" \
-                --input -
+          MUTATION='mutation($input: CreateCommitOnBranchInput!) { createCommitOnBranch(input: $input) { commit { oid url } } }'
+
+          for ATTEMPT in 1 2 3; do
+            git fetch --no-tags origin main
+            REMOTE_HEAD="$(git rev-parse origin/main)"
+            REMOTE_SOURCE_BLOB="$(git rev-parse origin/main:README.md)"
+            REMOTE_TARGET_BLOB="$(git rev-parse origin/main:README.zh-CN.md)"
+
+            if [ "$LOCAL_SOURCE_BLOB" != "$REMOTE_SOURCE_BLOB" ]; then
+              echo "README.md changed during this run; a newer run will synchronize it."
+              exit 0
+            fi
+            if [ "$LOCAL_TARGET_BLOB" != "$REMOTE_TARGET_BLOB" ]; then
+              echo "README.zh-CN.md changed during this run; refusing to overwrite it."
+              exit 1
+            fi
+
+            if jq -n \
+              --arg query "$MUTATION" \
+              --arg repository "$GITHUB_REPOSITORY" \
+              --arg expectedHeadOid "$REMOTE_HEAD" \
+              --arg contents "$ENCODED_CONTENT" \
+              '{
+                query: $query,
+                variables: {
+                  input: {
+                    branch: {
+                      repositoryNameWithOwner: $repository,
+                      branchName: "main"
+                    },
+                    expectedHeadOid: $expectedHeadOid,
+                    message: {
+                      headline: "chore(profile): sync Chinese README"
+                    },
+                    fileChanges: {
+                      additions: [{
+                        path: "README.zh-CN.md",
+                        contents: $contents
+                      }]
+                    }
+                  }
+                }
+              }' | gh api graphql --input -; then
+              exit 0
+            fi
+
+            if [ "$ATTEMPT" -eq 3 ]; then
+              echo "Branch head kept changing; unable to publish safely."
+              exit 1
+            fi
+          done

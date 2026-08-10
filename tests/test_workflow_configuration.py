@@ -42,15 +42,20 @@ class WorkflowConfigurationTests(unittest.TestCase):
             "python3 .github/scripts/sync_profile_readme.py",
             "git rev-parse HEAD:README.md",
             "git rev-parse origin/main:README.md",
+            "git rev-parse HEAD:README.zh-CN.md",
             "git rev-parse origin/main:README.zh-CN.md",
             '"$LOCAL_SOURCE_BLOB" != "$REMOTE_SOURCE_BLOB"',
-            "gh api --method PUT",
+            '"$LOCAL_TARGET_BLOB" != "$REMOTE_TARGET_BLOB"',
+            "createCommitOnBranch",
+            "expectedHeadOid",
+            "gh api graphql",
             "chore(profile): sync Chinese README",
         )
         for fragment in expected_fragments:
             with self.subTest(fragment=fragment):
                 self.assertIn(fragment, workflow)
         self.assertNotIn('"$REMOTE_SHA" != "$GITHUB_SHA"', workflow)
+        self.assertNotIn("gh api --method PUT", workflow)
 
 
 if __name__ == "__main__":
