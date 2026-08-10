@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-感知 → 状态建模 → 决策 → 动作
+EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 </p>
 
 <p align="center">
@@ -20,21 +20,22 @@
 
 ## 🔬 目前在做什么
 
-我目前的研究方向是构建以人为本的具身智能体系统，打通感知、状态建模、规划与动作的完整链路。具体来说，是在 Aloha、Astribot 等具身平台上，探索如何融合 EEG、视觉与行为信号，构建更自然、更可靠的多模态 AI 系统。
+我目前正在构建以人为本的具身智能体系统，整合多模态感知、状态建模、决策与动作执行。我的工作聚焦于融合 EEG、视觉以及生理或行为信号的 AI 系统，并在 ALOHA、Astribot 和 ZsiBot 等具身平台上进行机器人集成。
 
-不同于传统的对话机器人，我更关注「懂人」的智能系统——围绕感知 → 状态估计 → 决策 → 执行 → 反馈的闭环架构展开工作。
+这些系统遵循闭环架构：感知 → 状态估计 → 决策 → 动作执行 → 反馈。
 
-### 一些能力示例
+### 能力示例
 
-* 情绪 → 机器人动作（例如：开心 → 靠近 / 互动）
-* EEG → 意图识别 → 控制指令
-* 视觉 + EEG → 更鲁棒的状态估计
+* EEG → 意图解码 → 决策 → STM32 小车控制
+* 面部情绪 → 决策 → 安全门控的 Astribot 动作
+* EMG 手势 → 决策 → ZsiBot 机器人控制
+* 视觉 + 机器人状态 + EEG 信号 → OpenPI 策略 → ALOHA 双臂动作
 
 <br>
 
 ## 🧠 研究方向
 
-我的研究聚焦于三个方向：跨被试 EEG 泛化、EEG / 视觉 / 语言 / 音频的多模态融合，以及超越传统 BCI 场景的行为驱动人类状态建模。此外，我也关注如何将这些方法落地为实时系统，真正部署到机器人与具身设备上。
+我的研究兴趣包括跨被试 EEG 泛化、EEG / 视觉 / 语言 / 音频的多模态融合，以及超越传统 BCI 场景的行为驱动人类状态建模。此外，我也关注如何将实时 AI 部署到以人为本的具身智能体系统中。
 
 <br>
 
@@ -42,7 +43,7 @@
 
 ### [EEG 情绪识别（MAET 模型）](https://github.com/Danielz-z/LGF-EEG-Emotion)
 
-* 融合多重分形特征、图连接特征和 Transformer
+* 融合多重分形、图结构与 Transformer 的模型
 * 在 SEED-VII 数据集上进行跨被试泛化
 * 关注鲁棒性与泛化能力
 * 论文：[Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
@@ -61,7 +62,7 @@
 
 * 融合面部表情识别、EEG 信号和 BCI 范式进行多模态人类状态感知
 * 基于 DeepFace 的情绪识别原型，用于实时机器人交互 — [笔记](https://github.com/Danielz-z/ai-engineering-notes/blob/main/deepface_robot_control.md)
-* 探索基于 SSVEP 和 motor imagery 的机器人控制，使用 EEGNet 等模型
+* 探索基于 SSVEP 的机器人控制，并使用 EEGNet 进行运动想象分类
 * 闭环系统（感知 → 状态估计 → 决策 → 动作 → 反馈），通过稳定的事件触发逻辑减少噪声或不稳定的机器人动作
 * 在 AgileX Aloha 平台上微调 π0.5 VLA 模型，完成双臂操作任务 — [笔记](https://github.com/Danielz-z/ai-engineering-notes/blob/main/pi05_aloha_finetune.md)
 * 部署 OpenPI 策略服务，实现双臂 Piper 推理与失败恢复 — [笔记](https://github.com/Danielz-z/ai-engineering-notes/blob/main/openpi_aloha_inference_deployment.md)
@@ -69,7 +70,7 @@
 
 ### EAV 多模态情绪识别
 
-* 42 被试 EEG-Audio-Video 多模态情绪识别数据集，采用防泄漏数据划分；构建了完整的单模态基线与 late fusion，准确率达 0.5729
+* 42 被试 EEG-Audio-Video 多模态情绪识别数据集，采用防泄漏数据划分；构建了完整的单模态基线与晚期融合，准确率达 0.5729
 
 ### [个人网站与 AI 基础设施](https://amorfati.cn/)
 
@@ -84,7 +85,7 @@
 * 编程：Python、C/C++、Java、SQL、JavaScript、Shell
 
 * AI / 机器学习：
-  PyTorch、TensorFlow、Scikit-Learn、OpenCV、MNE、Braindecode、EEGNet、Transformer、NumPy、Pandas、Matplotlib
+  PyTorch、TensorFlow、scikit-learn、OpenCV、MNE、Braindecode、EEGNet、Transformer 模型、NumPy、Pandas、Matplotlib
 
 * AI 工程工作流：
   Claude Code、OpenAI Codex
@@ -93,19 +94,13 @@
   Linux、Docker、Kubernetes、Git、SSH、VSCode Remote、MySQL、Jupyter、LaTeX
 
 * 机器人与嵌入式：
-  Astribot SDK、Aloha、STM32 嵌入式控制
+  Astribot SDK、ALOHA、OpenPI、STM32 嵌入式控制
 
 <br>
 
 ## 🤝 希望合作的方向
 
-欢迎围绕多模态智能体系统、具身 AI、EEG 与视觉融合，以及智能系统的真实场景部署等方向交流合作。
-
-<br>
-
-## 💡 想聊的话题
-
-欢迎探讨可扩展的 Agent 架构、人类状态建模，以及面向真实世界部署的 AI 系统设计等话题。
+欢迎围绕多模态智能体系统、具身 AI、EEG 与视觉融合、人类状态建模、可扩展的 Agent 架构，以及智能系统的真实场景部署等方向交流合作。
 
 <br>
 
