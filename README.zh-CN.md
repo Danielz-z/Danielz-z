@@ -61,12 +61,12 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 演示视频：即将上线
 
 * 融合面部表情识别、EEG 信号和 BCI 范式进行多模态人类状态感知
-* 基于 DeepFace 的情绪识别原型，用于实时机器人交互 — [笔记](https://github.com/Danielz-z/ai-engineering-notes/blob/main/deepface_robot_control.md)
+* 基于 DeepFace 的情绪识别原型，用于实时机器人交互 — [笔记](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/deepface_robot_control.md)
 * 探索基于 SSVEP 的机器人控制，并使用 EEGNet 进行运动想象分类
 * 闭环系统（感知 → 状态估计 → 决策 → 动作 → 反馈），通过稳定的事件触发逻辑减少噪声或不稳定的机器人动作
-* 在 AgileX Aloha 平台上微调 π0.5 VLA 模型，完成双臂操作任务 — [笔记](https://github.com/Danielz-z/ai-engineering-notes/blob/main/pi05_aloha_finetune.md)
-* 部署 OpenPI 策略服务，实现双臂 Piper 推理与失败恢复 — [笔记](https://github.com/Danielz-z/ai-engineering-notes/blob/main/openpi_aloha_inference_deployment.md)
-* EMG 手势识别控制 ZsiBot ZSL-1W 轮腿机器人（约 40ms 延迟）— [笔记](https://github.com/Danielz-z/ai-engineering-notes/blob/main/zsibot_emg_robot_control.md)
+* 在 AgileX Aloha 平台上微调 π0.5 VLA 模型，完成双臂操作任务 — [笔记](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/pi05_aloha_finetune.md)
+* 部署 OpenPI 策略服务，实现双臂 Piper 推理与失败恢复 — [笔记](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/openpi_aloha_inference_deployment.md)
+* EMG 手势识别控制 ZsiBot ZSL-1W 轮腿机器人（约 40ms 延迟）— [笔记](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/zsibot_emg_robot_control.md)
 
 ### EAV 多模态情绪识别
 
@@ -76,7 +76,7 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 
 * 基于 Docker 的个人网站，使用 Caddy 反向代理和 WordPress
 * 迁移至 AI 就绪的基础设施，集成 FastAPI 与未来 Agent 服务
-* 笔记：[Amor Fati AI 基础设施](https://github.com/Danielz-z/ai-engineering-notes/blob/main/amorfati-ai-infra-readme.md)
+* 笔记：[Amor Fati AI 基础设施](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/amorfati-ai-infra-readme.md)
 
 <br>
 

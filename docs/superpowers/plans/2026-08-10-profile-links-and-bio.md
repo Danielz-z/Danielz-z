@@ -29,7 +29,7 @@
 - Consumes: the five public note filenames in both README files.
 - Produces: ten links under `https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/` and a regression test rejecting the former repository URL.
 
-- [ ] **Step 1: Write the failing regression test**
+- [x] **Step 1: Write the failing regression test**
 
 Create `tests/test_profile_content.py` with:
 
@@ -67,13 +67,13 @@ if __name__ == "__main__":
     unittest.main()
 ```
 
-- [ ] **Step 2: Run the focused test and verify RED**
+- [x] **Step 2: Run the focused test and verify RED**
 
 Run: `python3 -m unittest tests.test_profile_content -v`
 
 Expected: FAIL because both README files still contain `https://github.com/Danielz-z/ai-engineering-notes/blob/main/`.
 
-- [ ] **Step 3: Apply the minimal URL replacement**
+- [x] **Step 3: Apply the minimal URL replacement**
 
 In `README.md` and `README.zh-CN.md`, replace each occurrence of:
 
@@ -89,7 +89,7 @@ https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/
 
 No surrounding text changes are permitted.
 
-- [ ] **Step 4: Verify GREEN and existing invariants**
+- [x] **Step 4: Verify GREEN and existing invariants**
 
 Run: `python3 -m unittest tests.test_profile_content -v`
 
@@ -103,13 +103,15 @@ Run the existing `validate_translation` function against `README.md`, `README.zh
 
 Expected: bilingual structure, assets, and protected terms remain valid.
 
-- [ ] **Step 5: Verify public availability**
+- [x] **Step 5: Verify public availability**
 
 For each of the five corrected URLs, run unauthenticated `curl -L` and require HTTP 200.
 
 Expected: all five URLs return HTTP 200.
 
 ### Task 2: Update and verify GitHub Bio
+
+**Execution note:** The GitHub CLI token lacked the required `user` scope. The user chose to update the Bio manually, so no further account mutation is part of this execution.
 
 **Files:**
 - No repository file changes.
@@ -118,32 +120,25 @@ Expected: all five URLs return HTTP 200.
 - Consumes: authenticated GitHub account `Danielz-z`.
 - Produces: account Bio exactly equal to `CS student at BJTU | Incoming M.S. student in AI at UCLA`.
 
-- [ ] **Step 1: Read the current Bio**
+- [x] **Step 1: Read the current Bio**
 
 Run: `gh api user --jq .bio`
 
 Expected: the previous BJTU/UCLA wording is returned.
 
-- [ ] **Step 2: Update only the Bio field**
+- [x] **Step 2: Hand the Bio update back to the user**
 
-Run:
+The user will set the following exact value through GitHub profile settings:
 
-```bash
-gh api --method PATCH user \
-  -f 'bio=CS student at BJTU | Incoming M.S. student in AI at UCLA'
+```text
+CS student at BJTU | Incoming M.S. student in AI at UCLA
 ```
 
-Expected: GitHub returns the updated account object.
+No additional GitHub account fields or CLI scopes will be changed.
 
-- [ ] **Step 3: Read back exact account metadata**
+- [x] **Step 3: Stop automated account mutation**
 
-Run: `gh api user --jq '{login, bio}'`
-
-Expected:
-
-```json
-{"bio":"CS student at BJTU | Incoming M.S. student in AI at UCLA","login":"Danielz-z"}
-```
+Resume Bio verification only after the user reports that the manual update is complete.
 
 ### Task 3: Publish and verify repository changes
 
@@ -157,7 +152,7 @@ Expected:
 - Consumes: verified local `main` changes.
 - Produces: synchronized local and remote `main` commits.
 
-- [ ] **Step 1: Review the exact diff**
+- [x] **Step 1: Review the exact diff**
 
 Run: `git diff --check`, `git diff --stat`, and `git diff` for the four intended files.
 
@@ -170,7 +165,7 @@ Run:
 ```bash
 git add README.md README.zh-CN.md tests/test_profile_content.py \
   docs/superpowers/plans/2026-08-10-profile-links-and-bio.md
-git commit -m "fix: repair profile links and bio"
+git commit -m "fix: repair profile note links"
 ```
 
 Expected: one commit containing only the intended repository changes.

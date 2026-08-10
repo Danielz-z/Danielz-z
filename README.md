@@ -61,12 +61,12 @@ My research interests include cross-subject EEG generalization, multimodal fusio
 Demo video: coming soon
 
 * Multimodal human-state sensing with facial emotion recognition, EEG signals, and BCI paradigms
-* Built a DeepFace-based emotion recognition prototype for real-time robot interaction — [notes](https://github.com/Danielz-z/ai-engineering-notes/blob/main/deepface_robot_control.md)
+* Built a DeepFace-based emotion recognition prototype for real-time robot interaction — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/deepface_robot_control.md)
 * Explored SSVEP-based robot control and motor-imagery classification with EEGNet
 * Closed-loop system (perception → state estimation → decision → action → feedback) with stable event-triggering logic to reduce noisy or unstable robot actions
-* π0.5 VLA model fine-tuning on AgileX Aloha for bimanual manipulation — [notes](https://github.com/Danielz-z/ai-engineering-notes/blob/main/pi05_aloha_finetune.md)
-* OpenPI policy serving and dual-arm Piper inference with failure recovery — [notes](https://github.com/Danielz-z/ai-engineering-notes/blob/main/openpi_aloha_inference_deployment.md)
-* EMG gesture recognition controlling ZsiBot ZSL-1W wheeled-legged robot (~40ms latency) — [notes](https://github.com/Danielz-z/ai-engineering-notes/blob/main/zsibot_emg_robot_control.md)
+* π0.5 VLA model fine-tuning on AgileX Aloha for bimanual manipulation — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/pi05_aloha_finetune.md)
+* OpenPI policy serving and dual-arm Piper inference with failure recovery — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/openpi_aloha_inference_deployment.md)
+* EMG gesture recognition controlling ZsiBot ZSL-1W wheeled-legged robot (~40ms latency) — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/zsibot_emg_robot_control.md)
 
 ### EAV Multimodal Emotion Recognition
 
@@ -76,7 +76,7 @@ Demo video: coming soon
 
 * Docker-first personal website with Caddy reverse proxy and WordPress
 * Migrated to AI-ready infrastructure with FastAPI and future agent services
-* Notes: [Amor Fati AI Infrastructure](https://github.com/Danielz-z/ai-engineering-notes/blob/main/amorfati-ai-infra-readme.md)
+* Notes: [Amor Fati AI Infrastructure](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/amorfati-ai-infra-readme.md)
 
 <br>
 
