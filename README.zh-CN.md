@@ -58,7 +58,7 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 
 ### 具身智能与机器人控制（企业项目）
 
-演示视频：即将上线
+演示视频：[观看实习演示](https://amorfati.cn/personal-archive/internship/)
 
 * 融合面部表情识别、EEG 信号和 BCI 范式进行多模态人类状态感知
 * 基于 DeepFace 的情绪识别原型，用于实时机器人交互 — [笔记](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/deepface_robot_control.md)

@@ -58,7 +58,7 @@ My research interests include cross-subject EEG generalization, multimodal fusio
 
 ### Embodied AI & Robot Control (Industry Projects)
 
-Demo video: coming soon
+Demo video: [Watch the internship demo](https://amorfati.cn/personal-archive/internship/)
 
 * Multimodal human-state sensing with facial emotion recognition, EEG signals, and BCI paradigms
 * Built a DeepFace-based emotion recognition prototype for real-time robot interaction — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/deepface_robot_control.md)
