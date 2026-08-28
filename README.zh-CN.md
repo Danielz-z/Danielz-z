@@ -18,7 +18,7 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 
 <br>
 
-## 🔬 目前在做什么
+## 🔬 目前的工作
 
 我目前正在构建以人为本的具身智能体系统，整合多模态感知、状态建模、决策与动作执行。我的工作聚焦于融合 EEG、视觉以及生理或行为信号的 AI 系统，并在 ALOHA、Astribot 和 ZsiBot 等具身平台上开展机器人系统集成。
 
@@ -49,13 +49,6 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 * 论文：[Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
 * 获 IEEE EMBC 2026 口头报告录用
 
-### [EEG-BCI-Car](https://github.com/Danielz-z/EEG-BCI-Car)
-
-* 端到端 EEG 意图识别系统
-* 模型训练（LSTM / SVM 等）+ 实时控制
-* 与嵌入式系统联动（STM32 + 蓝牙）
-* 荣获第 13 届 Cloud Programming World Cup 一等奖
-
 ### 具身智能与机器人控制（企业项目）
 
 演示视频：[观看实习演示](https://amorfati.cn/personal-archive/internship/)
@@ -71,6 +64,13 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 ### EAV 多模态情绪识别
 
 * 42 被试 EEG-Audio-Video 数据集，采用防泄漏数据划分；构建了完整的单模态基线与后期融合，准确率达 0.5729
+
+### [EEG-BCI-Car](https://github.com/Danielz-z/EEG-BCI-Car)
+
+* 端到端 EEG 意图识别系统
+* 模型训练（LSTM / SVM 等）+ 实时控制
+* 与嵌入式系统联动（STM32 + 蓝牙）
+* 荣获第 13 届 Cloud Programming World Cup 一等奖
 
 ### [个人网站与 AI 基础设施](https://amorfati.cn/)
 
