@@ -89,11 +89,11 @@ Demo video: [Watch the internship demo](https://amorfati.cn/personal-archive/int
 
 * Machine Learning & Data: PyTorch, scikit-learn, NumPy, Pandas, OpenCV
 
-* Backend & Databases: FastAPI, Flask, LangGraph, MySQL, PostgreSQL
+* Web Development & Databases: FastAPI, Flask, LangGraph, MySQL, PostgreSQL, WordPress, Three.js
 
 * Robotics: ROS, OpenPI
 
-* Development Tools: Linux, Git, Docker
+* Development Tools: Linux, Git, Docker, Bash, Nginx
 
 <br>
 
@@ -121,7 +121,7 @@ I am open to collaboration and discussion on multimodal agent systems, embodied 
 ## 🛠 Languages and Tools
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=py,c,cpp,java,js,pytorch,sklearn,opencv,fastapi,flask,mysql,postgres,ros,linux,git,docker&perline=8" alt="Python, C, C++, Java, JavaScript, PyTorch, scikit-learn, OpenCV, FastAPI, Flask, MySQL, PostgreSQL, ROS, Linux, Git, Docker" />
+  <img src="https://skillicons.dev/icons?i=py,c,cpp,java,js,pytorch,sklearn,opencv,fastapi,flask,mysql,postgres,ros,linux,git,docker,wordpress,bash,nginx,threejs&perline=10" alt="Python, C, C++, Java, JavaScript, PyTorch, scikit-learn, OpenCV, FastAPI, Flask, MySQL, PostgreSQL, ROS, Linux, Git, Docker, WordPress, Bash, Nginx, Three.js" />
 </p>
 
 <br>

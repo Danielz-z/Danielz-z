@@ -89,11 +89,11 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 
 * 机器学习与数据：PyTorch、scikit-learn、NumPy、Pandas、OpenCV
 
-* 后端与数据库：FastAPI、Flask、LangGraph、MySQL、PostgreSQL
+* Web 开发与数据库：FastAPI、Flask、LangGraph、MySQL、PostgreSQL、WordPress、Three.js
 
 * 机器人：ROS、OpenPI
 
-* 开发工具：Linux、Git、Docker
+* 开发工具：Linux、Git、Docker、Bash、Nginx
 
 <br>
 
@@ -121,7 +121,7 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 ## 🛠 语言与工具
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=py,c,cpp,java,js,pytorch,sklearn,opencv,fastapi,flask,mysql,postgres,ros,linux,git,docker&perline=8" alt="Python, C, C++, Java, JavaScript, PyTorch, scikit-learn, OpenCV, FastAPI, Flask, MySQL, PostgreSQL, ROS, Linux, Git, Docker" />
+  <img src="https://skillicons.dev/icons?i=py,c,cpp,java,js,pytorch,sklearn,opencv,fastapi,flask,mysql,postgres,ros,linux,git,docker,wordpress,bash,nginx,threejs&perline=10" alt="Python, C, C++, Java, JavaScript, PyTorch, scikit-learn, OpenCV, FastAPI, Flask, MySQL, PostgreSQL, ROS, Linux, Git, Docker, WordPress, Bash, Nginx, Three.js" />
 </p>
 
 <br>
