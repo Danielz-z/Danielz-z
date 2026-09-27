@@ -29,7 +29,8 @@ These systems follow closed-loop architectures: perception → state estimation 
 * EEG → Intention Decoding → Decision → STM32 Vehicle Control
 * Facial Emotion → Decision → Safety-Gated Astribot Action
 * EMG Gesture → Decision → ZsiBot Robot Control
-* Vision + Robot State + EEG Signals → OpenPI Policy → ALOHA Dual-Arm Action
+* EEG Task Events → Human Confirmation → Robot Task Request
+* Images + Robot State + Language Instruction → π0.5 via OpenPI → ALOHA Dual-Arm Action
 
 <br>
 
@@ -59,7 +60,7 @@ Demo video: [Watch the internship demo](https://amorfati.cn/personal-archive/int
 * Closed-loop system (perception → state estimation → decision → action → feedback) with stable event-triggering logic to reduce noisy or unstable robot actions
 * π0.5 VLA model fine-tuning on AgileX Aloha for bimanual manipulation — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/pi05_aloha_finetune.md)
 * OpenPI policy serving and dual-arm Piper inference with failure recovery — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/openpi_aloha_inference_deployment.md)
-* EMG gesture recognition controlling ZsiBot ZSL-1W wheeled-legged robot (~40ms latency) — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/zsibot_emg_robot_control.md)
+* EMG gesture recognition controlling ZsiBot ZSL-1W wheeled-legged robot — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/zsibot_emg_robot_control.md)
 
 ### EAV Multimodal Emotion Recognition
 
