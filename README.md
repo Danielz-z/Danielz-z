@@ -85,19 +85,15 @@ Demo video: [Watch the internship demo](https://amorfati.cn/personal-archive/int
 
 ## ⚙️ Engineering Stack
 
-* Programming: Python, C/C++, Java, SQL, JavaScript, Shell
+* Programming: Python, C/C++, Java, JavaScript, SQL
 
-* AI / Machine Learning:
-  PyTorch, TensorFlow, scikit-learn, OpenCV, MNE, Braindecode, EEGNet, Transformer Models, NumPy, Pandas, Matplotlib
+* Machine Learning & Data: PyTorch, scikit-learn, NumPy, Pandas, OpenCV
 
-* AI Engineering Workflow:
-  Claude Code, OpenAI Codex
+* Backend & Databases: FastAPI, Flask, LangGraph, MySQL, PostgreSQL
 
-* Systems & Infrastructure:
-  Linux, Docker, Kubernetes, Git, SSH, VSCode Remote, MySQL, Jupyter, LaTeX
+* Robotics: ROS, OpenPI
 
-* Robotics & Embedded:
-  Astribot SDK, ALOHA, OpenPI, STM32 Embedded Control
+* Development Tools: Linux, Git, Docker
 
 <br>
 
@@ -125,7 +121,7 @@ I am open to collaboration and discussion on multimodal agent systems, embodied 
 ## 🛠 Languages and Tools
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=anaconda,aws,bash,blender,c,cpp,docker,fastapi,flask,git,githubactions,java,js,linux,matlab,mysql,nginx,photoshop,python,pytorch,qt,r,ros,scikitlearn,tensorflow,vscode,latex,opencv,kubernetes,arduino&perline=8" />
+  <img src="https://skillicons.dev/icons?i=py,c,cpp,java,js,pytorch,sklearn,opencv,fastapi,flask,mysql,postgres,ros,linux,git,docker&perline=8" alt="Python, C, C++, Java, JavaScript, PyTorch, scikit-learn, OpenCV, FastAPI, Flask, MySQL, PostgreSQL, ROS, Linux, Git, Docker" />
 </p>
 
 <br>

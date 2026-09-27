@@ -85,19 +85,15 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 
 ## ⚙️ 技术栈
 
-* 编程：Python、C/C++、Java、SQL、JavaScript、Shell
+* 编程：Python、C/C++、Java、JavaScript、SQL
 
-* AI / 机器学习：
-  PyTorch、TensorFlow、scikit-learn、OpenCV、MNE、Braindecode、EEGNet、Transformer 模型、NumPy、Pandas、Matplotlib
+* 机器学习与数据：PyTorch、scikit-learn、NumPy、Pandas、OpenCV
 
-* AI 工程工作流：
-  Claude Code、OpenAI Codex
+* 后端与数据库：FastAPI、Flask、LangGraph、MySQL、PostgreSQL
 
-* 系统与基础设施：
-  Linux、Docker、Kubernetes、Git、SSH、VSCode Remote、MySQL、Jupyter、LaTeX
+* 机器人：ROS、OpenPI
 
-* 机器人与嵌入式：
-  Astribot SDK、ALOHA、OpenPI、STM32 嵌入式控制
+* 开发工具：Linux、Git、Docker
 
 <br>
 
@@ -125,7 +121,7 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 ## 🛠 语言与工具
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=anaconda,aws,bash,blender,c,cpp,docker,fastapi,flask,git,githubactions,java,js,linux,matlab,mysql,nginx,photoshop,python,pytorch,qt,r,ros,scikitlearn,tensorflow,vscode,latex,opencv,kubernetes,arduino&perline=8" />
+  <img src="https://skillicons.dev/icons?i=py,c,cpp,java,js,pytorch,sklearn,opencv,fastapi,flask,mysql,postgres,ros,linux,git,docker&perline=8" alt="Python, C, C++, Java, JavaScript, PyTorch, scikit-learn, OpenCV, FastAPI, Flask, MySQL, PostgreSQL, ROS, Linux, Git, Docker" />
 </p>
 
 <br>
