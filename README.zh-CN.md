@@ -46,11 +46,11 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 
 ### [EEG 情绪识别（MAET 模型）](https://github.com/Danielz-z/LGF-EEG-Emotion)
 
-* 融合多重分形、图结构与 Transformer 的模型
+* 基于已有 MAET 实现进行适配，在 PyTorch 中融合局部与全局 EEG 特征
 * 在 SEED-VII 数据集上进行跨被试泛化
 * 关注鲁棒性与泛化能力
 * 论文：[Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
-* 获 IEEE EMBC 2026 口头报告录用
+* IEEE EMBC 2026 第一作者论文（Oral），已由导师完成现场报告
 
 ### 具身智能与机器人控制（企业项目）
 
@@ -66,14 +66,14 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 
 ### EAV 多模态情绪识别
 
-* 42 被试 EEG-Audio-Video 数据集，采用防泄漏数据划分；构建了完整的单模态基线与后期融合，准确率达 0.5729
+* 使用 EEG、音频和视频进行多模态情绪识别
 
 ### [EEG-BCI-Car](https://github.com/Danielz-z/EEG-BCI-Car)
 
 * 端到端 EEG 意图识别系统
-* 模型训练（LSTM / SVM 等）+ 实时控制
+* 训练与评估 LSTM/GRU 模型，并将预测结果接入车辆控制界面
 * 与嵌入式系统联动（STM32 + 蓝牙）
-* 荣获第 13 届 Cloud Programming World Cup 一等奖
+* 团队项目获第 13 届 Cloud Programming World Cup 的 World Cup Award（2025）
 
 ### [个人网站与 AI 基础设施](https://amorfati.cn/)
 

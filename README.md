@@ -46,11 +46,11 @@ My research interests include cross-subject EEG generalization, multimodal fusio
 
 ### [EEG Emotion Recognition (MAET model)](https://github.com/Danielz-z/LGF-EEG-Emotion)
 
-* Multifractal + Graph-based + Transformer-based model
+* Adapted an existing MAET implementation in PyTorch to combine local and global EEG features
 * Cross-subject generalization on SEED-VII dataset
 * Focus on robustness and generalization
 * Paper: [Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
-* Accepted for Oral Presentation at IEEE EMBC 2026
+* First author, IEEE EMBC 2026 (Oral); the presentation was delivered by my research advisor
 
 ### Embodied AI & Robot Control (Industry Projects)
 
@@ -66,14 +66,14 @@ Demo video: [Watch the internship demo](https://amorfati.cn/personal-archive/int
 
 ### EAV Multimodal Emotion Recognition
 
-* 42-subject EEG-Audio-Video dataset with leakage-free splits; built complete unimodal baselines and late fusion achieving 0.5729 accuracy
+* Multimodal emotion recognition using EEG, audio, and video
 
 ### [EEG-BCI-Car](https://github.com/Danielz-z/EEG-BCI-Car)
 
 * End-to-end EEG intention recognition system
-* Model training (LSTM / SVM / etc.) + real-time control
+* Trained and evaluated LSTM/GRU models; connected predictions to the vehicle-control interface
 * Integrated with embedded system (STM32 + Bluetooth)
-* Honored as The 13th Cloud Programming World Cup - first prize
+* The team project won the World Cup Award at the 13th Cloud Programming World Cup (2025)
 
 ### [Personal Website & AI Infrastructure](https://amorfati.cn/)
 
