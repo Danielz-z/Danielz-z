@@ -59,7 +59,7 @@ Demo video: [Watch the internship demo](https://amorfati.cn/personal-archive/int
 * Multimodal human-state sensing with facial emotion recognition, EEG signals, and BCI paradigms
 * Built a DeepFace-based emotion recognition prototype for real-time robot interaction — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/deepface_robot_control.md)
 * Explored SSVEP-based robot control and motor-imagery classification with EEGNet
-* Closed-loop system (perception → state estimation → decision → action → feedback) with stable event-triggering logic to reduce noisy or unstable robot actions
+* Connected EEG task events, human confirmation, and robot actions; added callback retries and logs to trace delivery failures
 * π0.5 VLA model fine-tuning on AgileX Aloha for bimanual manipulation — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/pi05_aloha_finetune.md)
 * OpenPI policy serving and dual-arm Piper inference with failure recovery — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/openpi_aloha_inference_deployment.md)
 * EMG gesture recognition controlling ZsiBot ZSL-1W wheeled-legged robot — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/zsibot_emg_robot_control.md)
@@ -78,7 +78,7 @@ Demo video: [Watch the internship demo](https://amorfati.cn/personal-archive/int
 ### [Personal Website & AI Infrastructure](https://amorfati.cn/)
 
 * Docker-first personal website with Caddy reverse proxy and WordPress
-* Migrated to AI-ready infrastructure with FastAPI and future agent services
+* Added a private FastAPI assistant for project-document search and server-status checks, with saved conversations and task history
 * Notes: [Amor Fati AI Infrastructure](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/amorfati-ai-infra-readme.md)
 
 <br>
