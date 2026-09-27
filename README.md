@@ -18,11 +18,13 @@ EEG & Multimodal Sensing → State Modeling → Decision → Robot Action
 
 <br>
 
-## 🔬 Current Work
+## 🔬 About Me & My Work
 
-I am currently building human-aware embodied agent systems that integrate multimodal sensing, state modeling, decision-making, and action. My work focuses on AI systems combining EEG, vision, and physiological or behavioral signals, with robotics integration on embodied platforms such as ALOHA, Astribot, and ZsiBot.
+I’m an MEng student in Artificial Intelligence at UCLA, expecting to graduate in December 2027, with a computer science degree from Beijing Jiaotong University. I’m interested in embodied AI and robot learning, particularly how perception and learning methods connect to real systems.
 
-These systems follow closed-loop architectures: perception → state estimation → decision → action execution → feedback.
+My earlier work focused on EEG-based intention and emotion recognition, including model training, evaluation, and connecting predictions to a vehicle-control interface. During my internship at EBkernel, I worked on robot integrations involving EEG task events, facial expressions, and EMG gestures, as well as π0.5/OpenPI training and deployment on ALOHA. In my current internship at Philo Homes, I work on 3D reconstruction from residential videos, adapting research code, converting camera and scene data, and checking outputs.
+
+Alongside this, I build web applications, backend services, and database projects. These give me experience with APIs, data storage, and deployment. Together, these projects have broadened my experience beyond model training to the data and software surrounding it—a foundation I want to build on in robot learning.
 
 ### Example Capabilities
 
