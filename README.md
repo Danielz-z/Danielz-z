@@ -83,6 +83,16 @@ Demo video: [Watch the internship demo](https://amorfati.cn/personal-archive/int
 
 <br>
 
+## 📄 Patent Application & Technical Disclosure
+
+### Method and System for Triggering Embodied Interaction Events Using Speech-Period EEG Exclusion and Multimodal Affect Recognition
+
+* **Status:** Invention patent application; filing accepted.
+* **Contribution:** Authored the technical disclosure.
+* **Proposed method:** Handling speech-related EEG interference and combining EEG, video, and audio affect estimates to generate stable interaction events for embodied devices.
+
+<br>
+
 ## ⚙️ Engineering Stack
 
 * Programming: Python, C/C++, Java, JavaScript, SQL
