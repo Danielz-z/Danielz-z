@@ -61,7 +61,7 @@ Demo video: **[Robot demonstration](https://amorfati.cn/personal-archive/interns
 * Explored SSVEP-based robot control and motor-imagery classification with EEGNet
 * Connected EEG task events, human confirmation, and robot actions; added callback retries and logs to trace delivery failures
 * π0.5 VLA model fine-tuning on AgileX Aloha for bimanual manipulation — **[notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/pi05_aloha_finetune.md)**
-* OpenPI policy serving and dual-arm Piper inference with failure recovery — **[notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/openpi_aloha_inference_deployment.md)** · **[Deployment code](https://github.com/Danielz-z/aloha-openpi-deploy)**
+* OpenPI policy serving and dual-arm Piper inference with failure recovery — **[notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/openpi_aloha_inference_deployment.md)**
 * EMG gesture recognition controlling ZsiBot ZSL-1W wheeled-legged robot — **[notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/zsibot_emg_robot_control.md)**
 
 ### Video-to-3D Reconstruction — Philo Homes
@@ -85,7 +85,7 @@ Demo video: **[Robot demonstration](https://amorfati.cn/personal-archive/interns
 ### [Personal Website & AI Infrastructure](https://amorfati.cn/)
 
 * Docker-first personal website with Caddy reverse proxy and WordPress
-* Use a private FastAPI assistant for project-document search and server-status checks, with saved conversations and task history
+* Added a private FastAPI assistant for project-document search and server-status checks, with saved conversations and task history
 * **[Outer Reach](https://amorfati.cn/play/)**: a browser-based space exploration prototype built with TypeScript and Babylon.js, with flight controls, planetary landings and local progress saves
 * Notes: **[Amor Fati AI Infrastructure](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/amorfati-ai-infra-readme.md)**
 
@@ -107,7 +107,7 @@ Demo video: **[Robot demonstration](https://amorfati.cn/personal-archive/interns
 
 * Machine Learning & Data: PyTorch, scikit-learn, NumPy, Pandas, OpenCV
 
-* Web Development & Databases: FastAPI, Flask, MySQL, PostgreSQL, WordPress, Three.js
+* Web Development & Databases: FastAPI, Flask, LangGraph, MySQL, PostgreSQL, WordPress, Three.js
 
 * Robotics: ROS, OpenPI
 

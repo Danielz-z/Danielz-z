@@ -61,7 +61,7 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 * 探索基于 SSVEP 的机器人控制，并使用 EEGNet 进行运动想象分类
 * 连接 EEG 任务事件、人工确认与机器人动作，加入回调重试和日志记录，便于排查消息传递失败
 * 在 AgileX Aloha 平台上微调 π0.5 VLA 模型，完成双臂操作任务 — **[笔记](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/pi05_aloha_finetune.md)**
-* 部署 OpenPI 策略服务，实现双臂 Piper 推理与失败恢复 — **[笔记](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/openpi_aloha_inference_deployment.md)** · **[部署代码](https://github.com/Danielz-z/aloha-openpi-deploy)**
+* 部署 OpenPI 策略服务，实现双臂 Piper 推理与失败恢复 — **[笔记](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/openpi_aloha_inference_deployment.md)**
 * EMG 手势识别控制 ZsiBot ZSL-1W 轮腿机器人 — **[笔记](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/zsibot_emg_robot_control.md)**
 
 ### 视频三维重建 — Philo Homes
@@ -85,7 +85,7 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 ### [个人网站与 AI 基础设施](https://amorfati.cn/)
 
 * 基于 Docker 的个人网站，使用 Caddy 反向代理和 WordPress
-* 使用基于 FastAPI 的私有管理助手检索项目文档、查看服务器状态，并保留对话和任务记录
+* 基于 FastAPI 开发私有管理助手，支持项目文档检索、服务器状态查看，以及对话和任务历史记录
 * **[Outer Reach](https://amorfati.cn/play/)**：基于 TypeScript 和 Babylon.js 的浏览器太空探索原型，包含飞行控制、行星着陆和本地进度保存
 * 笔记：**[Amor Fati AI 基础设施](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/amorfati-ai-infra-readme.md)**
 
@@ -107,7 +107,7 @@ EEG 与多模态感知 → 状态建模 → 决策 → 机器人动作
 
 * 机器学习与数据：PyTorch、scikit-learn、NumPy、Pandas、OpenCV
 
-* Web 开发与数据库：FastAPI、Flask、MySQL、PostgreSQL、WordPress、Three.js
+* Web 开发与数据库：FastAPI、Flask、LangGraph、MySQL、PostgreSQL、WordPress、Three.js
 
 * 机器人：ROS、OpenPI
 
