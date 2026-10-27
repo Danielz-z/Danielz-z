@@ -9,11 +9,11 @@ EEG & Multimodal Sensing → State Modeling → Decision → Robot Action
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
+  <a href="README.md"><strong>English</strong></a> · <a href="README.zh-CN.md"><strong>简体中文</strong></a>
 </p>
 
 <p align="center">
-  <a href="https://amorfati.cn/">🌐 Personal Website</a>
+  <a href="https://amorfati.cn/"><strong>🌐 Personal Website</strong></a>
 </p>
 
 <br>
@@ -49,26 +49,33 @@ My research interests include cross-subject EEG generalization, multimodal fusio
 * Multifractal + Graph-based + Transformer-based model
 * Cross-subject generalization on SEED-VII dataset
 * Focus on robustness and generalization
-* Paper: [Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)
+* Paper: **[Local-Global Feature Fusion for Subject-Independent EEG Emotion Recognition](https://arxiv.org/abs/2601.08094)**
 * Accepted for Oral Presentation at IEEE EMBC 2026
 
 ### Embodied AI & Robot Control (Industry Projects)
 
-Demo video: [Watch the internship demo](https://amorfati.cn/personal-archive/internship/)
+Demo video: **[Robot demonstration](https://amorfati.cn/personal-archive/internship/#robot-control)**
 
 * Multimodal human-state sensing with facial emotion recognition, EEG signals, and BCI paradigms
-* Built a DeepFace-based emotion recognition prototype for real-time robot interaction — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/deepface_robot_control.md)
+* Built a DeepFace-based emotion recognition prototype for real-time robot interaction — **[notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/deepface_robot_control.md)**
 * Explored SSVEP-based robot control and motor-imagery classification with EEGNet
 * Connected EEG task events, human confirmation, and robot actions; added callback retries and logs to trace delivery failures
-* π0.5 VLA model fine-tuning on AgileX Aloha for bimanual manipulation — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/pi05_aloha_finetune.md)
-* OpenPI policy serving and dual-arm Piper inference with failure recovery — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/openpi_aloha_inference_deployment.md)
-* EMG gesture recognition controlling ZsiBot ZSL-1W wheeled-legged robot — [notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/zsibot_emg_robot_control.md)
+* π0.5 VLA model fine-tuning on AgileX Aloha for bimanual manipulation — **[notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/pi05_aloha_finetune.md)**
+* OpenPI policy serving and dual-arm Piper inference with failure recovery — **[notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/openpi_aloha_inference_deployment.md)** · **[Deployment code](https://github.com/Danielz-z/aloha-openpi-deploy)**
+* EMG gesture recognition controlling ZsiBot ZSL-1W wheeled-legged robot — **[notes](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/zsibot_emg_robot_control.md)**
+
+### Video-to-3D Reconstruction — Philo Homes
+
+* Adapted DepthSplat and LongSplat to residential videos, preparing frames and camera data for reconstruction and rendering.
+* Extended an OOOSplat prototype with a Python DA3-to-Brush converter; ran training and model export and inspected rendered views for reconstruction artifacts.
 
 ### EAV Multimodal Emotion Recognition
 
 * 42-subject EEG-Audio-Video dataset with leakage-free splits; built complete unimodal baselines and late fusion achieving 0.5729 accuracy
 
 ### [EEG-BCI-Car](https://github.com/Danielz-z/EEG-BCI-Car)
+
+**[Project presentation and system demo](https://amorfati.cn/personal-archive/internship/#brain-car)**
 
 * End-to-end EEG intention recognition system
 * Model training (LSTM / SVM / etc.) + real-time control
@@ -78,8 +85,9 @@ Demo video: [Watch the internship demo](https://amorfati.cn/personal-archive/int
 ### [Personal Website & AI Infrastructure](https://amorfati.cn/)
 
 * Docker-first personal website with Caddy reverse proxy and WordPress
-* Added a private FastAPI assistant for project-document search and server-status checks, with saved conversations and task history
-* Notes: [Amor Fati AI Infrastructure](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/amorfati-ai-infra-readme.md)
+* Use a private FastAPI assistant for project-document search and server-status checks, with saved conversations and task history
+* **[Outer Reach](https://amorfati.cn/play/)**: a browser-based space exploration prototype built with TypeScript and Babylon.js, with flight controls, planetary landings and local progress saves
+* Notes: **[Amor Fati AI Infrastructure](https://github.com/Danielz-z/ai-engineering-notes-public/blob/main/amorfati-ai-infra-readme.md)**
 
 <br>
 
@@ -99,7 +107,7 @@ Demo video: [Watch the internship demo](https://amorfati.cn/personal-archive/int
 
 * Machine Learning & Data: PyTorch, scikit-learn, NumPy, Pandas, OpenCV
 
-* Web Development & Databases: FastAPI, Flask, LangGraph, MySQL, PostgreSQL, WordPress, Three.js
+* Web Development & Databases: FastAPI, Flask, MySQL, PostgreSQL, WordPress, Three.js
 
 * Robotics: ROS, OpenPI
 
@@ -115,8 +123,8 @@ I am open to collaboration and discussion on multimodal agent systems, embodied 
 
 ## 📫 Contact
 
-* Email: [daniel.zhengzhou@gmail.com](mailto:daniel.zhengzhou@gmail.com)
-* LinkedIn: [www.linkedin.com/in/zheng-zhou-cs](https://www.linkedin.com/in/zheng-zhou-cs)
+* Email: **[daniel.zhengzhou@gmail.com](mailto:daniel.zhengzhou@gmail.com)**
+* LinkedIn: **[Zheng Zhou](https://www.linkedin.com/in/zheng-zhou-cs)**
 
 <p align="center">
   <a href="https://github.com/Danielz-z" target="_blank">
